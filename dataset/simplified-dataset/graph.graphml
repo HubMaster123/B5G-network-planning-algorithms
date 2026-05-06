@@ -1,0 +1,19 @@
+import networkx as nx
+# Convert your igraph to NetworkX (or build directly in NX)
+
+G_nx = nx.Graph()
+for (u, v), seg in G.segments.items():
+    if u < v:
+        G_nx.add_edge(u, v, 
+                      weight=seg.cost, 
+                      cost=seg.cost, 
+                      length=seg.length)
+
+# Add node positions if you want
+for node, (lat, lon) in G.node_positions.items():
+    if node in G_nx:
+        G_nx.nodes[node]['lat'] = lat
+        G_nx.nodes[node]['lon'] = lon
+
+nx.write_graphml(G_nx, "simplified_graph/graph.graphml")
+print("GraphML saved!")

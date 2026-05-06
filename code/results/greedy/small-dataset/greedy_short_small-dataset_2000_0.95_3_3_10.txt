@@ -1,0 +1,168 @@
+Coverage_Percentage,Num_RUs,Num_DUs,Cost_RUs,Cost_DUs,Cost_CUs,Cost_Paths,Total_Cost,Total_Distance,Total_Users,FibreRU_DU,FibreDU_CU,RU_Num1cell,RU_Num2cell,RU_Num3cell,DU_Num1cell,DU_Num2cell,DU_Num3cell,UM,MR,CR,FC,Type
+96,29,5,486200,70800,14400,30412770,30984170,21259,29,68,18,6,7,16,5,0,0,2000,3,10,40000,greedy
+
+
+
+
+--------------------------------------------------------------------------------
+
+Results when coverage low: 0.95, UM: 2000, FC: 40000, MR: 3, CR: 10
+
+With the costs of RU(KV): 7150, DU(KW): 10900, Fibre RU-DU(KL): 400, Fibre DU-CU(KB): 800
+
+RU Cost: 6750, RU Install: 400, DU Cost: 10500, DU Install: 400
+
+--------------------------------------------------------------------------------
+
+
+MODEL RESULTS
+
+Cost of road paths: $30,412,770
+Cost of RUs: $486,200
+Cost of DUs: $70,800
+CU Cost: $14400
+
+TOTAL COST: $30,984,170
+30412770 + 486200 + 70800 + 14400 = $30984170
+
+
+Number of RUs: 29
+RU Cell Distribution:
+Number of RUs with 1 cell: 6
+Number of RUs with 2 cells: 7
+Number of RUs with 3 cells: 16
+
+
+Number of DUs: 5
+DU Cell Distribution:
+Number of DUs with 1 cell: 5
+Number of DUs with 2 cells: 0
+Number of DUs with 3 cells: 0
+
+
+Total number of fibre connections from RU to DU: 68
+Total number of fibre connections from DU to CU: 18
+
+
+
+COVERAGE
+User Coverage: 96.39%
+Count of covered users: 294
+Count of unassigned users: 11
+Total Users: 305
+
+
+DISTANCE
+Total distance in m: 21259m
+Total distance in km: 21.26 km
+
+
+--------------------------------------------------------------------------------
+
+
+DEVICES SELECTED AND PATHS
+
+selected_rus = ['RU10', 'RU11', 'RU13', 'RU14', 'RU15', 'RU16', 'RU17', 'RU19', 'RU2', 'RU20', 'RU21', 'RU22', 'RU23', 'RU24', 'RU25', 'RU26', 'RU3', 'RU35', 'RU38', 'RU4', 'RU50', 'RU51', 'RU54', 'RU55', 'RU57', 'RU7', 'RU8', 'RU82', 'RU83']
+not_selected_rus = ['RU1', 'RU12', 'RU18', 'RU32', 'RU34', 'RU36', 'RU37', 'RU5', 'RU58', 'RU59', 'RU94']
+selected_dus = ['DU1', 'DU2', 'DU3', 'DU4', 'DU9']
+not_selected_dus = []
+
+ru_to_du_connections = [('RU10', 'DU2'), ('RU11', 'DU2'), ('RU13', 'DU3'), ('RU14', 'DU3'), ('RU15', 'DU2'), ('RU16', 'DU2'), ('RU17', 'DU2'), ('RU19', 'DU1'), ('RU2', 'DU1'), ('RU20', 'DU1'), ('RU21', 'DU1'), ('RU22', 'DU1'), ('RU23', 'DU2'), ('RU24', 'DU1'), ('RU25', 'DU1'), ('RU26', 'DU4'), ('RU3', 'DU2'), ('RU35', 'DU9'), ('RU38', 'DU1'), ('RU4', 'DU1'), ('RU50', 'DU1'), ('RU51', 'DU9'), ('RU54', 'DU3'), ('RU55', 'DU3'), ('RU57', 'DU2'), ('RU7', 'DU1'), ('RU8', 'DU9'), ('RU82', 'DU3'), ('RU83', 'DU3')]
+du_to_cu_connections = [('DU1', 'CU1'), ('DU2', 'CU1'), ('DU3', 'CU1'), ('DU4', 'CU1'), ('DU9', 'CU1')]
+
+
+--------------------------------------------------------------------------------
+
+
+FIBRE CONNECTIONS OVERVIEW
+--------------------------------------------------------------------------------
+DU      Total RUs  Connected RUs                                                
+--------------------------------------------------------------------------------
+DU3     6          RU14, RU54, RU55, RU82, RU83, RU13                           
+DU4     1          RU26                                                         
+DU2     8          RU17, RU23, RU57, RU3, RU16, RU15, RU11, RU10                
+DU1     11         RU7, RU25, RU20, RU24, RU22, RU38, RU2, RU50, RU4, RU19, RU21
+DU9     3          RU35, RU51, RU8                                              
+--------------------------------------------------------------------------------
+TOTALS: 29         
+--------------------------------------------------------------------------------
+
+
+DU USAGE AND CAPACITY OVERVIEW (FIBRE CONNECTIONS AND PORTS):
+--------------------------------------------------------------------------------
+DU        Used Ports        Fibre RU-DU       Fibre DU-CU       Unused Ports      
+--------------------------------------------------------------------------------
+DU3       11                11                3                 0                 
+DU4       3                 3                 1                 0                 
+DU2       19                19                5                 0                 
+DU1       27                27                7                 0                 
+DU9       8                 8                 2                 0                 
+--------------------------------------------------------------------------------
+TOTALS:   68                68                18                0                 
+--------------------------------------------------------------------------------
+
+
+DU USAGE AND CAPACITY OVERVIEW (BANDWIDTH):
+--------------------------------------------------------------------------------
+DU        Used BW           Available BW      Unused BW         Num Cells 
+--------------------------------------------------------------------------------
+DU3       110000            120000            10000             1         
+DU4       30000             40000             10000             1         
+DU2       190000            200000            10000             1         
+DU1       270000            280000            10000             1         
+DU9       80000             80000             0                 1         
+--------------------------------------------------------------------------------
+TOTALS:   680000            720000            40000             5         
+--------------------------------------------------------------------------------
+
+
+RU USAGE AND CAPACITY OVERVIEW (FIBRE CONNECTIONS AND USERS):
+--------------------------------------------------------------------------------
+RU        Num Cells Used           Available      Unused        Num Users      
+--------------------------------------------------------------------------------
+RU35      3         30000          30000          0             15             
+RU14      3         28000          30000          2000          14             
+RU17      3         30000          30000          0             15             
+RU23      3         28000          30000          2000          14             
+RU51      3         22000          30000          8000          11             
+RU7       2         16000          20000          4000          8              
+RU54      2         16000          20000          4000          8              
+RU57      2         14000          20000          6000          7              
+RU55      1         6000           10000          4000          3              
+RU3       3         30000          30000          0             15             
+RU25      2         14000          20000          6000          7              
+RU20      3         28000          30000          2000          14             
+RU26      3         28000          30000          2000          14             
+RU82      1         10000          10000          0             5              
+RU24      2         18000          20000          2000          9              
+RU22      3         28000          30000          2000          14             
+RU38      3         22000          30000          8000          11             
+RU2       3         22000          30000          8000          11             
+RU83      1         10000          10000          0             5              
+RU16      3         26000          30000          4000          13             
+RU8       2         18000          20000          2000          9              
+RU15      1         6000           10000          4000          3              
+RU50      1         6000           10000          4000          3              
+RU13      3         28000          30000          2000          14             
+RU4       3         28000          30000          2000          14             
+RU11      1         8000           10000          2000          4              
+RU19      2         16000          20000          4000          8              
+RU10      3         24000          30000          6000          12             
+RU21      3         28000          30000          2000          14             
+--------------------------------------------------------------------------------
+TOTALS:   68        588000         680000         92000         294            
+--------------------------------------------------------------------------------
+
+
+
+
+
+------------------------------------------------------------
+User counts: 
+------------------------------------------------------------
+
+Covered Users: ['dem_91_user_2', 'dem_87_user_2', 'dem_149_user_1', 'dem_116_user_2', 'dem_85_user_3', 'dem_110_user_2', 'dem_168_user_1', 'dem_169_user_1', 'dem_104_user_3', 'dem_160_user_1', 'dem_94_user_1', 'dem_121_user_4', 'dem_114_user_1', 'dem_172_user_2', 'dem_144_user_1', 'dem_81_user_2', 'dem_155_user_3', 'dem_167_user_1', 'dem_111_user_2', 'dem_90_user_3', 'dem_86_user_2', 'dem_128_user_1', 'dem_106_user_1', 'dem_101_user_2', 'dem_148_user_2', 'dem_143_user_1', 'dem_164_user_1', 'dem_139_user_1', 'dem_125_user_2', 'dem_108_user_2', 'dem_175_user_1', 'dem_127_user_2', 'dem_113_user_2', 'dem_134_user_1', 'dem_122_user_2', 'dem_154_user_2', 'dem_126_user_1', 'dem_119_user_3', 'dem_163_user_2', 'dem_186_user_1', 'dem_138_user_3', 'dem_99_user_1', 'dem_170_user_1', 'dem_190_user_2', 'dem_131_user_4', 'dem_105_user_4', 'dem_123_user_2', 'dem_108_user_1', 'dem_101_user_1', 'dem_190_user_1', 'dem_185_user_2', 'dem_98_user_4', 'dem_79_user_2', 'dem_92_user_3', 'dem_91_user_1', 'dem_140_user_3', 'dem_176_user_2', 'dem_98_user_2', 'dem_171_user_2', 'dem_180_user_2', 'dem_161_user_2', 'dem_77_user_2', 'dem_140_user_4', 'dem_109_user_1', 'dem_112_user_4', 'dem_159_user_4', 'dem_116_user_1', 'dem_96_user_1', 'dem_124_user_2', 'dem_100_user_2', 'dem_132_user_1', 'dem_147_user_1', 'dem_113_user_3', 'dem_130_user_2', 'dem_150_user_3', 'dem_84_user_2', 'dem_94_user_2', 'dem_122_user_1', 'dem_145_user_2', 'dem_160_user_3', 'dem_175_user_2', 'dem_132_user_3', 'dem_180_user_1', 'dem_85_user_2', 'dem_106_user_3', 'dem_151_user_1', 'dem_78_user_2', 'dem_112_user_3', 'dem_115_user_2', 'dem_149_user_3', 'dem_95_user_1', 'dem_102_user_1', 'dem_148_user_1', 'dem_133_user_2', 'dem_164_user_2', 'dem_156_user_1', 'dem_173_user_2', 'dem_137_user_1', 'dem_163_user_1', 'dem_149_user_2', 'dem_166_user_1', 'dem_128_user_2', 'dem_179_user_2', 'dem_132_user_4', 'dem_146_user_1', 'dem_95_user_2', 'dem_183_user_2', 'dem_90_user_2', 'dem_96_user_2', 'dem_189_user_2', 'dem_119_user_1', 'dem_123_user_1', 'dem_189_user_1', 'dem_91_user_4', 'dem_122_user_4', 'dem_132_user_2', 'dem_155_user_1', 'dem_106_user_4', 'dem_117_user_2', 'dem_144_user_2', 'dem_160_user_2', 'dem_139_user_3', 'dem_159_user_1', 'dem_182_user_2', 'dem_103_user_2', 'dem_85_user_1', 'dem_146_user_2', 'dem_81_user_1', 'dem_109_user_2', 'dem_179_user_1', 'dem_147_user_2', 'dem_105_user_3', 'dem_152_user_2', 'dem_169_user_3', 'dem_166_user_2', 'dem_80_user_1', 'dem_142_user_3', 'dem_83_user_2', 'dem_80_user_2', 'dem_88_user_1', 'dem_89_user_2', 'dem_111_user_1', 'dem_121_user_1', 'dem_136_user_2', 'dem_153_user_1', 'dem_131_user_3', 'dem_157_user_1', 'dem_151_user_2', 'dem_129_user_4', 'dem_122_user_3', 'dem_184_user_1', 'dem_187_user_2', 'dem_152_user_1', 'dem_156_user_2', 'dem_93_user_1', 'dem_107_user_4', 'dem_99_user_4', 'dem_110_user_1', 'dem_135_user_2', 'dem_158_user_2', 'dem_120_user_3', 'dem_84_user_1', 'dem_86_user_3', 'dem_187_user_1', 'dem_178_user_1', 'dem_86_user_1', 'dem_159_user_3', 'dem_77_user_3', 'dem_114_user_4', 'dem_184_user_2', 'dem_134_user_2', 'dem_181_user_1', 'dem_113_user_1', 'dem_121_user_2', 'dem_130_user_3', 'dem_89_user_1', 'dem_97_user_1', 'dem_162_user_2', 'dem_167_user_3', 'dem_137_user_2', 'dem_158_user_3', 'dem_170_user_2', 'dem_98_user_3', 'dem_139_user_2', 'dem_105_user_1', 'dem_120_user_4', 'dem_77_user_1', 'dem_123_user_3', 'dem_150_user_2', 'dem_126_user_2', 'dem_161_user_1', 'dem_153_user_2', 'dem_182_user_1', 'dem_129_user_2', 'dem_103_user_1', 'dem_138_user_2', 'dem_191_user_1', 'dem_140_user_2', 'dem_129_user_3', 'dem_99_user_3', 'dem_83_user_1', 'dem_79_user_1', 'dem_92_user_2', 'dem_112_user_1', 'dem_131_user_1', 'dem_136_user_1', 'dem_107_user_1', 'dem_178_user_2', 'dem_127_user_1', 'dem_141_user_3', 'dem_185_user_1', 'dem_104_user_1', 'dem_112_user_2', 'dem_143_user_2', 'dem_113_user_4', 'dem_135_user_1', 'dem_88_user_2', 'dem_159_user_2', 'dem_174_user_1', 'dem_87_user_1', 'dem_130_user_1', 'dem_98_user_1', 'dem_114_user_3', 'dem_155_user_2', 'dem_147_user_3', 'dem_162_user_1', 'dem_115_user_1', 'dem_114_user_2', 'dem_131_user_2', 'dem_117_user_1', 'dem_157_user_2', 'dem_130_user_4', 'dem_151_user_3', 'dem_119_user_2', 'dem_92_user_1', 'dem_121_user_3', 'dem_107_user_2', 'dem_141_user_1', 'dem_82_user_2', 'dem_100_user_3', 'dem_138_user_1', 'dem_173_user_1', 'dem_97_user_3', 'dem_115_user_3', 'dem_92_user_4', 'dem_133_user_1', 'dem_165_user_1', 'dem_140_user_1', 'dem_154_user_1', 'dem_124_user_1', 'dem_150_user_1', 'dem_115_user_4', 'dem_145_user_1', 'dem_158_user_1', 'dem_172_user_1', 'dem_78_user_1', 'dem_191_user_2', 'dem_82_user_1', 'dem_93_user_2', 'dem_91_user_3', 'dem_118_user_2', 'dem_104_user_2', 'dem_125_user_1', 'dem_169_user_4', 'dem_120_user_2', 'dem_120_user_1', 'dem_167_user_2', 'dem_169_user_2', 'dem_176_user_1', 'dem_129_user_1', 'dem_181_user_2', 'dem_142_user_1', 'dem_183_user_1', 'dem_177_user_1', 'dem_139_user_4', 'dem_106_user_2', 'dem_141_user_2', 'dem_168_user_2', 'dem_105_user_2', 'dem_100_user_1', 'dem_118_user_1', 'dem_90_user_1', 'dem_99_user_2', 'dem_148_user_3', 'dem_165_user_2', 'dem_102_user_2', 'dem_186_user_2', 'dem_177_user_2', 'dem_107_user_3', 'dem_174_user_2', 'dem_97_user_2', 'dem_142_user_2', 'dem_168_user_3', 'dem_177_user_3']
+
+
+
+Unassigned Users: {'dem_192_user_2', 'dem_200_user_1', 'dem_192_user_1', 'dem_201_user_2', 'dem_171_user_1', 'dem_201_user_1', 'dem_202_user_2', 'dem_193_user_1', 'dem_200_user_2', 'dem_193_user_2', 'dem_202_user_1'}

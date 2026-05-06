@@ -1,0 +1,3332 @@
+{
+    "cu_info": [
+        {
+            "name": "CU1",
+            "is_selected": true,
+            "connected_dus": [
+                "DU3",
+                "DU4",
+                "DU2",
+                "DU1",
+                "DU9"
+            ],
+            "used_bandwidth": 2680000,
+            "used_ports": 5,
+            "total_fibres": 18
+        }
+    ],
+    "du_info": [
+        {
+            "name": "DU4",
+            "is_selected": true,
+            "used_ports": 3,
+            "fibre_ru_du": 3,
+            "fibre_du_cu": 1,
+            "connected_rus": [
+                "RU26"
+            ],
+            "connected_cu": "CU1",
+            "used_bandwidth": 30000,
+            "num_dus": 1
+        },
+        {
+            "name": "DU2",
+            "is_selected": true,
+            "used_ports": 19,
+            "fibre_ru_du": 19,
+            "fibre_du_cu": 5,
+            "connected_rus": [
+                "RU17",
+                "RU23",
+                "RU57",
+                "RU3",
+                "RU16",
+                "RU15",
+                "RU11",
+                "RU10"
+            ],
+            "connected_cu": "CU1",
+            "used_bandwidth": 190000,
+            "num_dus": 1
+        },
+        {
+            "name": "DU1",
+            "is_selected": true,
+            "used_ports": 27,
+            "fibre_ru_du": 27,
+            "fibre_du_cu": 7,
+            "connected_rus": [
+                "RU7",
+                "RU25",
+                "RU20",
+                "RU24",
+                "RU22",
+                "RU38",
+                "RU2",
+                "RU50",
+                "RU4",
+                "RU19",
+                "RU21"
+            ],
+            "connected_cu": "CU1",
+            "used_bandwidth": 270000,
+            "num_dus": 1
+        },
+        {
+            "name": "DU3",
+            "is_selected": true,
+            "used_ports": 11,
+            "fibre_ru_du": 11,
+            "fibre_du_cu": 3,
+            "connected_rus": [
+                "RU14",
+                "RU54",
+                "RU55",
+                "RU82",
+                "RU83",
+                "RU13"
+            ],
+            "connected_cu": "CU1",
+            "used_bandwidth": 110000,
+            "num_dus": 1
+        },
+        {
+            "name": "DU9",
+            "is_selected": true,
+            "used_ports": 8,
+            "fibre_ru_du": 8,
+            "fibre_du_cu": 2,
+            "connected_rus": [
+                "RU35",
+                "RU51",
+                "RU8"
+            ],
+            "connected_cu": "CU1",
+            "used_bandwidth": 80000,
+            "num_dus": 1
+        }
+    ],
+    "ru_info": [
+        {
+            "name": "RU35",
+            "is_selected": true,
+            "num_rus": 3,
+            "connected_users": [
+                "dem_169_user_2",
+                "dem_176_user_2",
+                "dem_177_user_1",
+                "dem_184_user_2",
+                "dem_167_user_1",
+                "dem_178_user_2",
+                "dem_167_user_3",
+                "dem_158_user_3",
+                "dem_179_user_2",
+                "dem_185_user_1",
+                "dem_160_user_3",
+                "dem_177_user_2",
+                "dem_170_user_1",
+                "dem_168_user_3",
+                "dem_177_user_3"
+            ],
+            "connected_du": "DU9",
+            "used_capacity": 30000
+        },
+        {
+            "name": "RU14",
+            "is_selected": true,
+            "num_rus": 3,
+            "connected_users": [
+                "dem_80_user_2",
+                "dem_101_user_2",
+                "dem_85_user_3",
+                "dem_99_user_2",
+                "dem_85_user_1",
+                "dem_92_user_1",
+                "dem_99_user_3",
+                "dem_86_user_1",
+                "dem_92_user_2",
+                "dem_91_user_4",
+                "dem_92_user_4",
+                "dem_91_user_1",
+                "dem_99_user_1",
+                "dem_91_user_3"
+            ],
+            "connected_du": "DU3",
+            "used_capacity": 28000
+        },
+        {
+            "name": "RU17",
+            "is_selected": true,
+            "num_rus": 3,
+            "connected_users": [
+                "dem_131_user_2",
+                "dem_120_user_2",
+                "dem_130_user_4",
+                "dem_120_user_1",
+                "dem_140_user_2",
+                "dem_119_user_2",
+                "dem_112_user_3",
+                "dem_141_user_1",
+                "dem_148_user_1",
+                "dem_140_user_3",
+                "dem_140_user_1",
+                "dem_149_user_2",
+                "dem_141_user_3",
+                "dem_140_user_4",
+                "dem_120_user_4"
+            ],
+            "connected_du": "DU2",
+            "used_capacity": 30000
+        },
+        {
+            "name": "RU23",
+            "is_selected": true,
+            "num_rus": 3,
+            "connected_users": [
+                "dem_149_user_1",
+                "dem_137_user_2",
+                "dem_138_user_2",
+                "dem_129_user_3",
+                "dem_129_user_4",
+                "dem_129_user_1",
+                "dem_138_user_1",
+                "dem_139_user_4",
+                "dem_119_user_3",
+                "dem_138_user_3",
+                "dem_128_user_1",
+                "dem_137_user_1",
+                "dem_139_user_3",
+                "dem_127_user_1"
+            ],
+            "connected_du": "DU2",
+            "used_capacity": 28000
+        },
+        {
+            "name": "RU58",
+            "is_selected": false,
+            "num_rus": 0,
+            "connected_users": [],
+            "connected_du": null,
+            "used_capacity": 0
+        },
+        {
+            "name": "RU51",
+            "is_selected": true,
+            "num_rus": 3,
+            "connected_users": [
+                "dem_170_user_2",
+                "dem_169_user_1",
+                "dem_178_user_1",
+                "dem_187_user_1",
+                "dem_160_user_1",
+                "dem_186_user_2",
+                "dem_179_user_1",
+                "dem_187_user_2",
+                "dem_186_user_1",
+                "dem_169_user_3",
+                "dem_169_user_4"
+            ],
+            "connected_du": "DU9",
+            "used_capacity": 22000
+        },
+        {
+            "name": "RU7",
+            "is_selected": true,
+            "num_rus": 2,
+            "connected_users": [
+                "dem_159_user_1",
+                "dem_168_user_1",
+                "dem_175_user_1",
+                "dem_158_user_1",
+                "dem_173_user_1",
+                "dem_174_user_2",
+                "dem_183_user_1",
+                "dem_174_user_1"
+            ],
+            "connected_du": "DU1",
+            "used_capacity": 16000
+        },
+        {
+            "name": "RU32",
+            "is_selected": false,
+            "num_rus": 0,
+            "connected_users": [],
+            "connected_du": null,
+            "used_capacity": 0
+        },
+        {
+            "name": "RU54",
+            "is_selected": true,
+            "num_rus": 2,
+            "connected_users": [
+                "dem_84_user_2",
+                "dem_90_user_1",
+                "dem_86_user_2",
+                "dem_90_user_2",
+                "dem_85_user_2",
+                "dem_107_user_4",
+                "dem_107_user_1",
+                "dem_84_user_1"
+            ],
+            "connected_du": "DU3",
+            "used_capacity": 16000
+        },
+        {
+            "name": "RU57",
+            "is_selected": true,
+            "num_rus": 2,
+            "connected_users": [
+                "dem_118_user_1",
+                "dem_110_user_2",
+                "dem_119_user_1",
+                "dem_102_user_2",
+                "dem_110_user_1",
+                "dem_111_user_2",
+                "dem_118_user_2"
+            ],
+            "connected_du": "DU2",
+            "used_capacity": 14000
+        },
+        {
+            "name": "RU55",
+            "is_selected": true,
+            "num_rus": 1,
+            "connected_users": [
+                "dem_79_user_2",
+                "dem_79_user_1",
+                "dem_80_user_1"
+            ],
+            "connected_du": "DU3",
+            "used_capacity": 6000
+        },
+        {
+            "name": "RU3",
+            "is_selected": true,
+            "num_rus": 3,
+            "connected_users": [
+                "dem_122_user_1",
+                "dem_103_user_1",
+                "dem_120_user_3",
+                "dem_104_user_1",
+                "dem_103_user_2",
+                "dem_111_user_1",
+                "dem_112_user_2",
+                "dem_96_user_2",
+                "dem_112_user_4",
+                "dem_113_user_2",
+                "dem_112_user_1",
+                "dem_98_user_1",
+                "dem_113_user_1",
+                "dem_121_user_2",
+                "dem_97_user_1"
+            ],
+            "connected_du": "DU2",
+            "used_capacity": 30000
+        },
+        {
+            "name": "RU25",
+            "is_selected": true,
+            "num_rus": 2,
+            "connected_users": [
+                "dem_123_user_2",
+                "dem_107_user_2",
+                "dem_121_user_4",
+                "dem_115_user_2",
+                "dem_122_user_4",
+                "dem_115_user_3",
+                "dem_114_user_4"
+            ],
+            "connected_du": "DU1",
+            "used_capacity": 14000
+        },
+        {
+            "name": "RU20",
+            "is_selected": true,
+            "num_rus": 3,
+            "connected_users": [
+                "dem_108_user_1",
+                "dem_100_user_3",
+                "dem_133_user_1",
+                "dem_124_user_1",
+                "dem_109_user_1",
+                "dem_115_user_4",
+                "dem_123_user_1",
+                "dem_108_user_2",
+                "dem_116_user_1",
+                "dem_107_user_3",
+                "dem_124_user_2",
+                "dem_100_user_2",
+                "dem_123_user_3",
+                "dem_117_user_2"
+            ],
+            "connected_du": "DU1",
+            "used_capacity": 28000
+        },
+        {
+            "name": "RU26",
+            "is_selected": true,
+            "num_rus": 3,
+            "connected_users": [
+                "dem_182_user_1",
+                "dem_190_user_1",
+                "dem_191_user_2",
+                "dem_191_user_1",
+                "dem_180_user_1",
+                "dem_189_user_2",
+                "dem_181_user_2",
+                "dem_172_user_1",
+                "dem_172_user_2",
+                "dem_173_user_2",
+                "dem_189_user_1",
+                "dem_190_user_2",
+                "dem_181_user_1",
+                "dem_180_user_2"
+            ],
+            "connected_du": "DU4",
+            "used_capacity": 28000
+        },
+        {
+            "name": "RU37",
+            "is_selected": false,
+            "num_rus": 0,
+            "connected_users": [],
+            "connected_du": null,
+            "used_capacity": 0
+        },
+        {
+            "name": "RU82",
+            "is_selected": true,
+            "num_rus": 1,
+            "connected_users": [
+                "dem_77_user_2",
+                "dem_78_user_2",
+                "dem_78_user_1",
+                "dem_77_user_1",
+                "dem_77_user_3"
+            ],
+            "connected_du": "DU3",
+            "used_capacity": 10000
+        },
+        {
+            "name": "RU24",
+            "is_selected": true,
+            "num_rus": 2,
+            "connected_users": [
+                "dem_153_user_2",
+                "dem_145_user_2",
+                "dem_151_user_3",
+                "dem_142_user_3",
+                "dem_153_user_1",
+                "dem_143_user_1",
+                "dem_150_user_1",
+                "dem_159_user_2",
+                "dem_144_user_2"
+            ],
+            "connected_du": "DU1",
+            "used_capacity": 18000
+        },
+        {
+            "name": "RU36",
+            "is_selected": false,
+            "num_rus": 0,
+            "connected_users": [],
+            "connected_du": null,
+            "used_capacity": 0
+        },
+        {
+            "name": "RU22",
+            "is_selected": true,
+            "num_rus": 3,
+            "connected_users": [
+                "dem_116_user_2",
+                "dem_117_user_1",
+                "dem_136_user_2",
+                "dem_125_user_2",
+                "dem_145_user_1",
+                "dem_135_user_1",
+                "dem_134_user_1",
+                "dem_144_user_1",
+                "dem_125_user_1",
+                "dem_126_user_1",
+                "dem_134_user_2",
+                "dem_135_user_2",
+                "dem_136_user_1",
+                "dem_126_user_2"
+            ],
+            "connected_du": "DU1",
+            "used_capacity": 28000
+        },
+        {
+            "name": "RU38",
+            "is_selected": true,
+            "num_rus": 3,
+            "connected_users": [
+                "dem_114_user_2",
+                "dem_121_user_1",
+                "dem_121_user_3",
+                "dem_106_user_3",
+                "dem_130_user_3",
+                "dem_113_user_4",
+                "dem_114_user_1",
+                "dem_130_user_1",
+                "dem_114_user_3",
+                "dem_113_user_3",
+                "dem_130_user_2"
+            ],
+            "connected_du": "DU1",
+            "used_capacity": 22000
+        },
+        {
+            "name": "RU59",
+            "is_selected": false,
+            "num_rus": 0,
+            "connected_users": [],
+            "connected_du": null,
+            "used_capacity": 0
+        },
+        {
+            "name": "RU2",
+            "is_selected": true,
+            "num_rus": 3,
+            "connected_users": [
+                "dem_151_user_1",
+                "dem_152_user_2",
+                "dem_162_user_2",
+                "dem_171_user_2",
+                "dem_161_user_2",
+                "dem_151_user_2",
+                "dem_152_user_1",
+                "dem_159_user_4",
+                "dem_162_user_1",
+                "dem_160_user_2",
+                "dem_161_user_1"
+            ],
+            "connected_du": "DU1",
+            "used_capacity": 22000
+        },
+        {
+            "name": "RU94",
+            "is_selected": false,
+            "num_rus": 0,
+            "connected_users": [],
+            "connected_du": null,
+            "used_capacity": 0
+        },
+        {
+            "name": "RU83",
+            "is_selected": true,
+            "num_rus": 1,
+            "connected_users": [
+                "dem_94_user_2",
+                "dem_83_user_2",
+                "dem_81_user_1",
+                "dem_81_user_2",
+                "dem_86_user_3"
+            ],
+            "connected_du": "DU3",
+            "used_capacity": 10000
+        },
+        {
+            "name": "RU16",
+            "is_selected": true,
+            "num_rus": 3,
+            "connected_users": [
+                "dem_154_user_1",
+                "dem_146_user_1",
+                "dem_146_user_2",
+                "dem_155_user_2",
+                "dem_154_user_2",
+                "dem_147_user_2",
+                "dem_164_user_2",
+                "dem_155_user_3",
+                "dem_155_user_1",
+                "dem_156_user_1",
+                "dem_147_user_1",
+                "dem_147_user_3",
+                "dem_163_user_1"
+            ],
+            "connected_du": "DU2",
+            "used_capacity": 26000
+        },
+        {
+            "name": "RU1",
+            "is_selected": false,
+            "num_rus": 0,
+            "connected_users": [],
+            "connected_du": null,
+            "used_capacity": 0
+        },
+        {
+            "name": "RU8",
+            "is_selected": true,
+            "num_rus": 2,
+            "connected_users": [
+                "dem_182_user_2",
+                "dem_175_user_2",
+                "dem_183_user_2",
+                "dem_185_user_2",
+                "dem_167_user_2",
+                "dem_176_user_1",
+                "dem_184_user_1",
+                "dem_168_user_2",
+                "dem_166_user_2"
+            ],
+            "connected_du": "DU9",
+            "used_capacity": 18000
+        },
+        {
+            "name": "RU15",
+            "is_selected": true,
+            "num_rus": 1,
+            "connected_users": [
+                "dem_129_user_2",
+                "dem_127_user_2",
+                "dem_128_user_2"
+            ],
+            "connected_du": "DU2",
+            "used_capacity": 6000
+        },
+        {
+            "name": "RU50",
+            "is_selected": true,
+            "num_rus": 1,
+            "connected_users": [
+                "dem_159_user_3",
+                "dem_150_user_2",
+                "dem_150_user_3"
+            ],
+            "connected_du": "DU1",
+            "used_capacity": 6000
+        },
+        {
+            "name": "RU13",
+            "is_selected": true,
+            "num_rus": 3,
+            "connected_users": [
+                "dem_100_user_1",
+                "dem_87_user_2",
+                "dem_88_user_1",
+                "dem_101_user_1",
+                "dem_83_user_1",
+                "dem_88_user_2",
+                "dem_109_user_2",
+                "dem_94_user_1",
+                "dem_82_user_2",
+                "dem_92_user_3",
+                "dem_87_user_1",
+                "dem_93_user_1",
+                "dem_82_user_1",
+                "dem_93_user_2"
+            ],
+            "connected_du": "DU3",
+            "used_capacity": 28000
+        },
+        {
+            "name": "RU5",
+            "is_selected": false,
+            "num_rus": 0,
+            "connected_users": [],
+            "connected_du": null,
+            "used_capacity": 0
+        },
+        {
+            "name": "RU4",
+            "is_selected": true,
+            "num_rus": 3,
+            "connected_users": [
+                "dem_132_user_4",
+                "dem_132_user_3",
+                "dem_131_user_3",
+                "dem_143_user_2",
+                "dem_122_user_3",
+                "dem_142_user_1",
+                "dem_122_user_2",
+                "dem_131_user_1",
+                "dem_132_user_2",
+                "dem_141_user_2",
+                "dem_133_user_2",
+                "dem_132_user_1",
+                "dem_142_user_2",
+                "dem_131_user_4"
+            ],
+            "connected_du": "DU1",
+            "used_capacity": 28000
+        },
+        {
+            "name": "RU18",
+            "is_selected": false,
+            "num_rus": 0,
+            "connected_users": [],
+            "connected_du": null,
+            "used_capacity": 0
+        },
+        {
+            "name": "RU34",
+            "is_selected": false,
+            "num_rus": 0,
+            "connected_users": [],
+            "connected_du": null,
+            "used_capacity": 0
+        },
+        {
+            "name": "RU11",
+            "is_selected": true,
+            "num_rus": 1,
+            "connected_users": [
+                "dem_95_user_2",
+                "dem_95_user_1",
+                "dem_102_user_1",
+                "dem_104_user_2"
+            ],
+            "connected_du": "DU2",
+            "used_capacity": 8000
+        },
+        {
+            "name": "RU19",
+            "is_selected": true,
+            "num_rus": 2,
+            "connected_users": [
+                "dem_98_user_3",
+                "dem_98_user_4",
+                "dem_106_user_4",
+                "dem_106_user_2",
+                "dem_99_user_4",
+                "dem_115_user_1",
+                "dem_98_user_2",
+                "dem_106_user_1"
+            ],
+            "connected_du": "DU1",
+            "used_capacity": 16000
+        },
+        {
+            "name": "RU10",
+            "is_selected": true,
+            "num_rus": 3,
+            "connected_users": [
+                "dem_91_user_2",
+                "dem_105_user_4",
+                "dem_89_user_2",
+                "dem_104_user_3",
+                "dem_105_user_1",
+                "dem_105_user_3",
+                "dem_96_user_1",
+                "dem_97_user_2",
+                "dem_97_user_3",
+                "dem_90_user_3",
+                "dem_105_user_2",
+                "dem_89_user_1"
+            ],
+            "connected_du": "DU2",
+            "used_capacity": 24000
+        },
+        {
+            "name": "RU21",
+            "is_selected": true,
+            "num_rus": 3,
+            "connected_users": [
+                "dem_157_user_2",
+                "dem_148_user_2",
+                "dem_157_user_1",
+                "dem_164_user_1",
+                "dem_148_user_3",
+                "dem_165_user_2",
+                "dem_139_user_2",
+                "dem_139_user_1",
+                "dem_149_user_3",
+                "dem_163_user_2",
+                "dem_158_user_2",
+                "dem_156_user_2",
+                "dem_165_user_1",
+                "dem_166_user_1"
+            ],
+            "connected_du": "DU1",
+            "used_capacity": 28000
+        },
+        {
+            "name": "RU12",
+            "is_selected": false,
+            "num_rus": 0,
+            "connected_users": [],
+            "connected_du": null,
+            "used_capacity": 0
+        }
+    ],
+    "users": [
+        {
+            "user_id": "dem_91_user_2",
+            "assign_ru": "RU10",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_87_user_2",
+            "assign_ru": "RU13",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_168_user_1",
+            "assign_ru": "RU7",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_85_user_3",
+            "assign_ru": "RU14",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_169_user_1",
+            "assign_ru": "RU51",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_160_user_1",
+            "assign_ru": "RU51",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_121_user_4",
+            "assign_ru": "RU25",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_172_user_2",
+            "assign_ru": "RU26",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_114_user_1",
+            "assign_ru": "RU38",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_144_user_1",
+            "assign_ru": "RU22",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_81_user_2",
+            "assign_ru": "RU83",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_167_user_1",
+            "assign_ru": "RU35",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_111_user_2",
+            "assign_ru": "RU57",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_90_user_3",
+            "assign_ru": "RU10",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_86_user_2",
+            "assign_ru": "RU54",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_128_user_1",
+            "assign_ru": "RU23",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_106_user_1",
+            "assign_ru": "RU19",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_148_user_2",
+            "assign_ru": "RU21",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_143_user_1",
+            "assign_ru": "RU24",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_127_user_2",
+            "assign_ru": "RU15",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_113_user_2",
+            "assign_ru": "RU3",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_134_user_1",
+            "assign_ru": "RU22",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_163_user_2",
+            "assign_ru": "RU21",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_126_user_1",
+            "assign_ru": "RU22",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_190_user_2",
+            "assign_ru": "RU26",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_186_user_1",
+            "assign_ru": "RU51",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_99_user_1",
+            "assign_ru": "RU14",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_108_user_1",
+            "assign_ru": "RU20",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_185_user_2",
+            "assign_ru": "RU8",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_192_user_2",
+            "assign_ru": null,
+            "is_assigned": false
+        },
+        {
+            "user_id": "dem_91_user_1",
+            "assign_ru": "RU14",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_140_user_3",
+            "assign_ru": "RU17",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_98_user_2",
+            "assign_ru": "RU19",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_161_user_2",
+            "assign_ru": "RU2",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_77_user_2",
+            "assign_ru": "RU82",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_147_user_1",
+            "assign_ru": "RU16",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_132_user_1",
+            "assign_ru": "RU4",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_113_user_3",
+            "assign_ru": "RU38",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_150_user_3",
+            "assign_ru": "RU50",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_94_user_2",
+            "assign_ru": "RU83",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_122_user_1",
+            "assign_ru": "RU3",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_132_user_3",
+            "assign_ru": "RU4",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_180_user_1",
+            "assign_ru": "RU26",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_85_user_2",
+            "assign_ru": "RU54",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_106_user_3",
+            "assign_ru": "RU38",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_78_user_2",
+            "assign_ru": "RU82",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_112_user_3",
+            "assign_ru": "RU17",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_173_user_2",
+            "assign_ru": "RU26",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_102_user_1",
+            "assign_ru": "RU11",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_200_user_1",
+            "assign_ru": null,
+            "is_assigned": false
+        },
+        {
+            "user_id": "dem_166_user_1",
+            "assign_ru": "RU21",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_132_user_4",
+            "assign_ru": "RU4",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_146_user_1",
+            "assign_ru": "RU16",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_95_user_2",
+            "assign_ru": "RU11",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_192_user_1",
+            "assign_ru": null,
+            "is_assigned": false
+        },
+        {
+            "user_id": "dem_96_user_2",
+            "assign_ru": "RU3",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_119_user_1",
+            "assign_ru": "RU57",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_123_user_1",
+            "assign_ru": "RU20",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_91_user_4",
+            "assign_ru": "RU14",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_122_user_4",
+            "assign_ru": "RU25",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_117_user_2",
+            "assign_ru": "RU20",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_160_user_2",
+            "assign_ru": "RU2",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_103_user_2",
+            "assign_ru": "RU3",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_85_user_1",
+            "assign_ru": "RU14",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_146_user_2",
+            "assign_ru": "RU16",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_109_user_2",
+            "assign_ru": "RU13",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_179_user_1",
+            "assign_ru": "RU51",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_147_user_2",
+            "assign_ru": "RU16",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_152_user_2",
+            "assign_ru": "RU2",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_169_user_3",
+            "assign_ru": "RU51",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_166_user_2",
+            "assign_ru": "RU8",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_80_user_2",
+            "assign_ru": "RU14",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_88_user_1",
+            "assign_ru": "RU13",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_153_user_1",
+            "assign_ru": "RU24",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_89_user_2",
+            "assign_ru": "RU10",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_136_user_2",
+            "assign_ru": "RU22",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_151_user_2",
+            "assign_ru": "RU2",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_122_user_3",
+            "assign_ru": "RU4",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_184_user_1",
+            "assign_ru": "RU8",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_156_user_2",
+            "assign_ru": "RU21",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_93_user_1",
+            "assign_ru": "RU13",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_158_user_2",
+            "assign_ru": "RU21",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_110_user_1",
+            "assign_ru": "RU57",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_84_user_1",
+            "assign_ru": "RU54",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_86_user_3",
+            "assign_ru": "RU83",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_187_user_1",
+            "assign_ru": "RU51",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_178_user_1",
+            "assign_ru": "RU51",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_159_user_3",
+            "assign_ru": "RU50",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_201_user_2",
+            "assign_ru": null,
+            "is_assigned": false
+        },
+        {
+            "user_id": "dem_181_user_1",
+            "assign_ru": "RU26",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_113_user_1",
+            "assign_ru": "RU3",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_121_user_2",
+            "assign_ru": "RU3",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_162_user_2",
+            "assign_ru": "RU2",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_97_user_1",
+            "assign_ru": "RU3",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_167_user_3",
+            "assign_ru": "RU35",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_170_user_2",
+            "assign_ru": "RU51",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_77_user_1",
+            "assign_ru": "RU82",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_123_user_3",
+            "assign_ru": "RU20",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_161_user_1",
+            "assign_ru": "RU2",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_140_user_2",
+            "assign_ru": "RU17",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_99_user_3",
+            "assign_ru": "RU14",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_83_user_1",
+            "assign_ru": "RU13",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_136_user_1",
+            "assign_ru": "RU22",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_127_user_1",
+            "assign_ru": "RU23",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_185_user_1",
+            "assign_ru": "RU35",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_104_user_1",
+            "assign_ru": "RU3",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_112_user_2",
+            "assign_ru": "RU3",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_201_user_1",
+            "assign_ru": null,
+            "is_assigned": false
+        },
+        {
+            "user_id": "dem_113_user_4",
+            "assign_ru": "RU38",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_88_user_2",
+            "assign_ru": "RU13",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_159_user_2",
+            "assign_ru": "RU24",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_87_user_1",
+            "assign_ru": "RU13",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_147_user_3",
+            "assign_ru": "RU16",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_114_user_2",
+            "assign_ru": "RU38",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_117_user_1",
+            "assign_ru": "RU22",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_157_user_2",
+            "assign_ru": "RU21",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_151_user_3",
+            "assign_ru": "RU24",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_119_user_2",
+            "assign_ru": "RU17",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_92_user_1",
+            "assign_ru": "RU14",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_176_user_2",
+            "assign_ru": "RU35",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_82_user_2",
+            "assign_ru": "RU13",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_100_user_3",
+            "assign_ru": "RU20",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_97_user_3",
+            "assign_ru": "RU10",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_133_user_1",
+            "assign_ru": "RU20",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_200_user_2",
+            "assign_ru": null,
+            "is_assigned": false
+        },
+        {
+            "user_id": "dem_140_user_1",
+            "assign_ru": "RU17",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_124_user_1",
+            "assign_ru": "RU20",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_150_user_1",
+            "assign_ru": "RU24",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_115_user_4",
+            "assign_ru": "RU20",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_145_user_1",
+            "assign_ru": "RU22",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_158_user_1",
+            "assign_ru": "RU7",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_172_user_1",
+            "assign_ru": "RU26",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_82_user_1",
+            "assign_ru": "RU13",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_91_user_3",
+            "assign_ru": "RU14",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_118_user_2",
+            "assign_ru": "RU57",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_169_user_4",
+            "assign_ru": "RU51",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_167_user_2",
+            "assign_ru": "RU8",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_176_user_1",
+            "assign_ru": "RU8",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_181_user_2",
+            "assign_ru": "RU26",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_183_user_1",
+            "assign_ru": "RU7",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_139_user_4",
+            "assign_ru": "RU23",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_106_user_2",
+            "assign_ru": "RU19",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_141_user_2",
+            "assign_ru": "RU4",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_105_user_2",
+            "assign_ru": "RU10",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_100_user_1",
+            "assign_ru": "RU13",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_118_user_1",
+            "assign_ru": "RU57",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_99_user_2",
+            "assign_ru": "RU14",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_107_user_3",
+            "assign_ru": "RU20",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_142_user_2",
+            "assign_ru": "RU4",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_149_user_1",
+            "assign_ru": "RU23",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_116_user_2",
+            "assign_ru": "RU22",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_110_user_2",
+            "assign_ru": "RU57",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_104_user_3",
+            "assign_ru": "RU10",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_94_user_1",
+            "assign_ru": "RU13",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_155_user_3",
+            "assign_ru": "RU16",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_101_user_2",
+            "assign_ru": "RU14",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_164_user_1",
+            "assign_ru": "RU21",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_139_user_1",
+            "assign_ru": "RU21",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_125_user_2",
+            "assign_ru": "RU22",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_108_user_2",
+            "assign_ru": "RU20",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_175_user_1",
+            "assign_ru": "RU7",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_122_user_2",
+            "assign_ru": "RU4",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_154_user_2",
+            "assign_ru": "RU16",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_119_user_3",
+            "assign_ru": "RU23",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_138_user_3",
+            "assign_ru": "RU23",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_170_user_1",
+            "assign_ru": "RU35",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_131_user_4",
+            "assign_ru": "RU4",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_105_user_4",
+            "assign_ru": "RU10",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_123_user_2",
+            "assign_ru": "RU25",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_190_user_1",
+            "assign_ru": "RU26",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_101_user_1",
+            "assign_ru": "RU13",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_98_user_4",
+            "assign_ru": "RU19",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_79_user_2",
+            "assign_ru": "RU55",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_92_user_3",
+            "assign_ru": "RU13",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_171_user_2",
+            "assign_ru": "RU2",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_180_user_2",
+            "assign_ru": "RU26",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_140_user_4",
+            "assign_ru": "RU17",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_109_user_1",
+            "assign_ru": "RU20",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_112_user_4",
+            "assign_ru": "RU3",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_159_user_4",
+            "assign_ru": "RU2",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_116_user_1",
+            "assign_ru": "RU20",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_96_user_1",
+            "assign_ru": "RU10",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_124_user_2",
+            "assign_ru": "RU20",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_100_user_2",
+            "assign_ru": "RU20",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_130_user_2",
+            "assign_ru": "RU38",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_84_user_2",
+            "assign_ru": "RU54",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_145_user_2",
+            "assign_ru": "RU24",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_175_user_2",
+            "assign_ru": "RU8",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_151_user_1",
+            "assign_ru": "RU2",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_115_user_2",
+            "assign_ru": "RU25",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_149_user_3",
+            "assign_ru": "RU21",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_95_user_1",
+            "assign_ru": "RU11",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_164_user_2",
+            "assign_ru": "RU16",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_148_user_1",
+            "assign_ru": "RU17",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_133_user_2",
+            "assign_ru": "RU4",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_156_user_1",
+            "assign_ru": "RU16",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_137_user_1",
+            "assign_ru": "RU23",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_163_user_1",
+            "assign_ru": "RU16",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_149_user_2",
+            "assign_ru": "RU17",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_128_user_2",
+            "assign_ru": "RU15",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_179_user_2",
+            "assign_ru": "RU35",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_183_user_2",
+            "assign_ru": "RU8",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_90_user_2",
+            "assign_ru": "RU54",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_189_user_2",
+            "assign_ru": "RU26",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_189_user_1",
+            "assign_ru": "RU26",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_132_user_2",
+            "assign_ru": "RU4",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_155_user_1",
+            "assign_ru": "RU16",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_106_user_4",
+            "assign_ru": "RU19",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_144_user_2",
+            "assign_ru": "RU24",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_139_user_3",
+            "assign_ru": "RU23",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_159_user_1",
+            "assign_ru": "RU7",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_182_user_2",
+            "assign_ru": "RU8",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_81_user_1",
+            "assign_ru": "RU83",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_105_user_3",
+            "assign_ru": "RU10",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_80_user_1",
+            "assign_ru": "RU55",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_142_user_3",
+            "assign_ru": "RU24",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_160_user_3",
+            "assign_ru": "RU35",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_83_user_2",
+            "assign_ru": "RU83",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_157_user_1",
+            "assign_ru": "RU21",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_111_user_1",
+            "assign_ru": "RU3",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_121_user_1",
+            "assign_ru": "RU38",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_191_user_2",
+            "assign_ru": "RU26",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_131_user_3",
+            "assign_ru": "RU4",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_129_user_4",
+            "assign_ru": "RU23",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_187_user_2",
+            "assign_ru": "RU51",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_152_user_1",
+            "assign_ru": "RU2",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_107_user_4",
+            "assign_ru": "RU54",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_99_user_4",
+            "assign_ru": "RU19",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_135_user_2",
+            "assign_ru": "RU22",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_120_user_3",
+            "assign_ru": "RU3",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_86_user_1",
+            "assign_ru": "RU14",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_77_user_3",
+            "assign_ru": "RU82",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_114_user_4",
+            "assign_ru": "RU25",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_184_user_2",
+            "assign_ru": "RU35",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_134_user_2",
+            "assign_ru": "RU22",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_130_user_3",
+            "assign_ru": "RU38",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_89_user_1",
+            "assign_ru": "RU10",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_158_user_3",
+            "assign_ru": "RU35",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_137_user_2",
+            "assign_ru": "RU23",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_171_user_1",
+            "assign_ru": null,
+            "is_assigned": false
+        },
+        {
+            "user_id": "dem_98_user_3",
+            "assign_ru": "RU19",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_139_user_2",
+            "assign_ru": "RU21",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_105_user_1",
+            "assign_ru": "RU10",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_120_user_4",
+            "assign_ru": "RU17",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_150_user_2",
+            "assign_ru": "RU50",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_126_user_2",
+            "assign_ru": "RU22",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_153_user_2",
+            "assign_ru": "RU24",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_182_user_1",
+            "assign_ru": "RU26",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_129_user_2",
+            "assign_ru": "RU15",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_103_user_1",
+            "assign_ru": "RU3",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_138_user_2",
+            "assign_ru": "RU23",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_191_user_1",
+            "assign_ru": "RU26",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_129_user_3",
+            "assign_ru": "RU23",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_79_user_1",
+            "assign_ru": "RU55",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_92_user_2",
+            "assign_ru": "RU14",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_112_user_1",
+            "assign_ru": "RU3",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_131_user_1",
+            "assign_ru": "RU4",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_107_user_1",
+            "assign_ru": "RU54",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_178_user_2",
+            "assign_ru": "RU35",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_141_user_3",
+            "assign_ru": "RU17",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_143_user_2",
+            "assign_ru": "RU4",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_202_user_2",
+            "assign_ru": null,
+            "is_assigned": false
+        },
+        {
+            "user_id": "dem_135_user_1",
+            "assign_ru": "RU22",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_174_user_1",
+            "assign_ru": "RU7",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_193_user_1",
+            "assign_ru": null,
+            "is_assigned": false
+        },
+        {
+            "user_id": "dem_130_user_1",
+            "assign_ru": "RU38",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_162_user_1",
+            "assign_ru": "RU2",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_98_user_1",
+            "assign_ru": "RU3",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_114_user_3",
+            "assign_ru": "RU38",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_155_user_2",
+            "assign_ru": "RU16",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_115_user_1",
+            "assign_ru": "RU19",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_131_user_2",
+            "assign_ru": "RU17",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_130_user_4",
+            "assign_ru": "RU17",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_121_user_3",
+            "assign_ru": "RU38",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_107_user_2",
+            "assign_ru": "RU25",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_141_user_1",
+            "assign_ru": "RU17",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_138_user_1",
+            "assign_ru": "RU23",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_173_user_1",
+            "assign_ru": "RU7",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_115_user_3",
+            "assign_ru": "RU25",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_92_user_4",
+            "assign_ru": "RU14",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_165_user_1",
+            "assign_ru": "RU21",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_154_user_1",
+            "assign_ru": "RU16",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_78_user_1",
+            "assign_ru": "RU82",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_193_user_2",
+            "assign_ru": null,
+            "is_assigned": false
+        },
+        {
+            "user_id": "dem_93_user_2",
+            "assign_ru": "RU13",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_104_user_2",
+            "assign_ru": "RU11",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_125_user_1",
+            "assign_ru": "RU22",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_120_user_2",
+            "assign_ru": "RU17",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_120_user_1",
+            "assign_ru": "RU17",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_169_user_2",
+            "assign_ru": "RU35",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_129_user_1",
+            "assign_ru": "RU23",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_142_user_1",
+            "assign_ru": "RU4",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_177_user_1",
+            "assign_ru": "RU35",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_168_user_2",
+            "assign_ru": "RU8",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_90_user_1",
+            "assign_ru": "RU54",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_148_user_3",
+            "assign_ru": "RU21",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_165_user_2",
+            "assign_ru": "RU21",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_102_user_2",
+            "assign_ru": "RU57",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_186_user_2",
+            "assign_ru": "RU51",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_177_user_2",
+            "assign_ru": "RU35",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_202_user_1",
+            "assign_ru": null,
+            "is_assigned": false
+        },
+        {
+            "user_id": "dem_174_user_2",
+            "assign_ru": "RU7",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_97_user_2",
+            "assign_ru": "RU10",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_168_user_3",
+            "assign_ru": "RU35",
+            "is_assigned": true
+        },
+        {
+            "user_id": "dem_177_user_3",
+            "assign_ru": "RU35",
+            "is_assigned": true
+        }
+    ],
+    "total_cost": 30984170,
+    "cost_of_RUs": 486200,
+    "cost_of_DUs": 70800,
+    "cost_of_CUs": 14400,
+    "total_segment_cost": 30412770,
+    "total_distance_used": 21259,
+    "coverage_percentage": 96.39344262295081,
+    "selected_paths": [
+        [
+            12237148,
+            13001444100
+        ],
+        [
+            701951437,
+            701919335
+        ],
+        [
+            260126635,
+            701840444
+        ],
+        [
+            260126635,
+            "RU24"
+        ],
+        [
+            701919332,
+            701919326
+        ],
+        [
+            13001444100,
+            701843133
+        ],
+        [
+            701919332,
+            701919335
+        ],
+        [
+            708157760,
+            708157756
+        ],
+        [
+            1840181125,
+            637944158
+        ],
+        [
+            "DU9",
+            701837587
+        ],
+        [
+            701888652,
+            701888996
+        ],
+        [
+            707488308,
+            "RU20"
+        ],
+        [
+            701951470,
+            "RU23"
+        ],
+        [
+            1840181331,
+            "RU14"
+        ],
+        [
+            "RU17",
+            701951437
+        ],
+        [
+            2010116015,
+            701843137
+        ],
+        [
+            12237145,
+            12237148
+        ],
+        [
+            701888996,
+            707429293
+        ],
+        [
+            70740020303,
+            1840181840
+        ],
+        [
+            1840181125,
+            7081577509
+        ],
+        [
+            707408054,
+            130018095
+        ],
+        [
+            249223893,
+            707500731
+        ],
+        [
+            "RU16",
+            6766512876
+        ],
+        [
+            1820158044,
+            1820157863
+        ],
+        [
+            12237227,
+            707408010
+        ],
+        [
+            2010116015,
+            701919432
+        ],
+        [
+            130018095,
+            707408054
+        ],
+        [
+            701888652,
+            "RU22"
+        ],
+        [
+            "RU3",
+            707460615
+        ],
+        [
+            707460615,
+            "RU3"
+        ],
+        [
+            6766512876,
+            "RU16"
+        ],
+        [
+            707500731,
+            707496860
+        ],
+        [
+            3953341836,
+            707488308
+        ],
+        [
+            701919344,
+            701951366
+        ],
+        [
+            701919335,
+            701951437
+        ],
+        [
+            701951437,
+            "RU17"
+        ],
+        [
+            1820157863,
+            1840181329
+        ],
+        [
+            701840444,
+            "RU2"
+        ],
+        [
+            1840181331,
+            130018095
+        ],
+        [
+            1820157863,
+            130018148
+        ],
+        [
+            701951416,
+            701951411
+        ],
+        [
+            701837587,
+            "DU9"
+        ],
+        [
+            708157716,
+            707460614
+        ],
+        [
+            184024720388,
+            707408054
+        ],
+        [
+            6766512876,
+            701951366
+        ],
+        [
+            708157716,
+            708157756
+        ],
+        [
+            701919326,
+            701951372
+        ],
+        [
+            701919326,
+            701919344
+        ],
+        [
+            701843137,
+            701843133
+        ],
+        [
+            1840247203,
+            "RU13"
+        ],
+        [
+            2010116015,
+            "RU50"
+        ],
+        [
+            130018149,
+            "RU54"
+        ],
+        [
+            13001444100,
+            12237148
+        ],
+        [
+            701951411,
+            701951353
+        ],
+        [
+            11646981058,
+            7081577509
+        ],
+        [
+            "RU25",
+            1840181098
+        ],
+        [
+            707408047,
+            1840181335
+        ],
+        [
+            "RU13",
+            1840247203
+        ],
+        [
+            "RU38",
+            708157760
+        ],
+        [
+            637944158,
+            "RU19"
+        ],
+        [
+            701840462,
+            701840476
+        ],
+        [
+            "RU55",
+            1840181329
+        ],
+        [
+            "RU23",
+            701951470
+        ],
+        [
+            701840476,
+            701837585
+        ],
+        [
+            1820157377,
+            "RU4"
+        ],
+        [
+            11646981058,
+            1840181098
+        ],
+        [
+            "RU22",
+            701888652
+        ],
+        [
+            701919344,
+            701919326
+        ],
+        [
+            708157756,
+            708157760
+        ],
+        [
+            708157760,
+            "RU38"
+        ],
+        [
+            1840181840,
+            707408047
+        ],
+        [
+            "RU21",
+            701919432
+        ],
+        [
+            701951372,
+            701919326
+        ],
+        [
+            708218540,
+            "DU4"
+        ],
+        [
+            701843137,
+            2010116015
+        ],
+        [
+            130018095,
+            1840181331
+        ],
+        [
+            701888996,
+            701888652
+        ],
+        [
+            707408047,
+            1840181840
+        ],
+        [
+            1820157520,
+            70195143332
+        ],
+        [
+            707496850,
+            707496860
+        ],
+        [
+            701837587,
+            701840472
+        ],
+        [
+            701837587,
+            "RU51"
+        ],
+        [
+            1820157377,
+            641810860
+        ],
+        [
+            "RU15",
+            701951372
+        ],
+        [
+            1840247203,
+            184024720388
+        ],
+        [
+            1840181329,
+            130018149
+        ],
+        [
+            "RU19",
+            637944158
+        ],
+        [
+            1820157520,
+            1820157377
+        ],
+        [
+            701919326,
+            701919332
+        ],
+        [
+            708157756,
+            708157716
+        ],
+        [
+            7081577509,
+            11646981058
+        ],
+        [
+            1840181330,
+            707460617
+        ],
+        [
+            "RU2",
+            701840444
+        ],
+        [
+            701951437,
+            707488226
+        ],
+        [
+            13001444100,
+            707488329
+        ],
+        [
+            1820157377,
+            1820157520
+        ],
+        [
+            707429293,
+            701888996
+        ],
+        [
+            1820157377,
+            "DU1"
+        ],
+        [
+            1840181329,
+            1820157863
+        ],
+        [
+            "RU35",
+            701840462
+        ],
+        [
+            707408010,
+            12237227
+        ],
+        [
+            1820158044,
+            707408010
+        ],
+        [
+            701837587,
+            701837585
+        ],
+        [
+            707408013,
+            "RU82"
+        ],
+        [
+            12237204,
+            3953341836
+        ],
+        [
+            249223893,
+            1840181330
+        ],
+        [
+            "RU57",
+            701951353
+        ],
+        [
+            1840181331,
+            70740020303
+        ],
+        [
+            "RU10",
+            707496850
+        ],
+        [
+            1820157863,
+            1820158044
+        ],
+        [
+            1820158044,
+            "DU3"
+        ],
+        [
+            707460617,
+            1840181330
+        ],
+        [
+            701951353,
+            249223893
+        ],
+        [
+            70195143332,
+            1820157520
+        ],
+        [
+            708218540,
+            "RU26"
+        ],
+        [
+            641810860,
+            260126635
+        ],
+        [
+            707496860,
+            "RU11"
+        ],
+        [
+            701843133,
+            701843137
+        ],
+        [
+            "RU14",
+            1840181331
+        ],
+        [
+            707496860,
+            707496850
+        ],
+        [
+            701837585,
+            701837587
+        ],
+        [
+            637944158,
+            708176999
+        ],
+        [
+            701837585,
+            701845690
+        ],
+        [
+            701837585,
+            701840476
+        ],
+        [
+            707460617,
+            707460615
+        ],
+        [
+            708176999,
+            637944158
+        ],
+        [
+            701951437,
+            701951416
+        ],
+        [
+            707500731,
+            249223893
+        ],
+        [
+            701919432,
+            "RU21"
+        ],
+        [
+            701951353,
+            701951411
+        ],
+        [
+            "RU82",
+            707408013
+        ],
+        [
+            "RU8",
+            701845690
+        ],
+        [
+            184024720388,
+            1840247203
+        ],
+        [
+            1820157377,
+            "CU1"
+        ],
+        [
+            12237145,
+            "RU7"
+        ],
+        [
+            707488308,
+            707429293
+        ],
+        [
+            701951366,
+            6766512876
+        ],
+        [
+            "DU2",
+            701951353
+        ],
+        [
+            707408013,
+            12237227
+        ],
+        [
+            707408054,
+            184024720388
+        ],
+        [
+            12237148,
+            12237145
+        ],
+        [
+            130018149,
+            1840181329
+        ],
+        [
+            260126635,
+            641810860
+        ],
+        [
+            701919335,
+            701951470
+        ],
+        [
+            "RU24",
+            260126635
+        ],
+        [
+            701840444,
+            260126635
+        ],
+        [
+            707496850,
+            "RU10"
+        ],
+        [
+            1840181335,
+            "RU83"
+        ],
+        [
+            701919335,
+            701919332
+        ],
+        [
+            707488226,
+            260126671
+        ],
+        [
+            701951353,
+            "DU2"
+        ],
+        [
+            701951372,
+            "RU15"
+        ],
+        [
+            "RU11",
+            707496860
+        ],
+        [
+            1840181098,
+            "RU25"
+        ],
+        [
+            707460614,
+            708176999
+        ],
+        [
+            1840181840,
+            70740020303
+        ],
+        [
+            701843133,
+            13001444100
+        ],
+        [
+            707460615,
+            707460617
+        ],
+        [
+            708218540,
+            12237145
+        ],
+        [
+            1840181335,
+            707408047
+        ],
+        [
+            701888996,
+            1820157520
+        ],
+        [
+            7081577509,
+            1840181125
+        ],
+        [
+            "RU83",
+            1840181335
+        ],
+        [
+            1840181098,
+            11646981058
+        ],
+        [
+            701840472,
+            701840444
+        ],
+        [
+            70740020303,
+            1840181331
+        ],
+        [
+            701951470,
+            701919335
+        ],
+        [
+            "RU7",
+            12237145
+        ],
+        [
+            701840462,
+            "RU35"
+        ],
+        [
+            260126671,
+            130014767679
+        ],
+        [
+            701951416,
+            701951437
+        ],
+        [
+            70740020303,
+            1820158044
+        ],
+        [
+            701951366,
+            701919344
+        ],
+        [
+            1840181329,
+            "RU55"
+        ],
+        [
+            1840181330,
+            249223893
+        ],
+        [
+            1820158044,
+            70740020303
+        ],
+        [
+            641810860,
+            1820157377
+        ],
+        [
+            1840181098,
+            70195143332
+        ],
+        [
+            707496860,
+            707500731
+        ],
+        [
+            701840476,
+            701840462
+        ],
+        [
+            130014767679,
+            707488329
+        ],
+        [
+            701845690,
+            701837585
+        ],
+        [
+            12237227,
+            707408013
+        ],
+        [
+            707460614,
+            708157716
+        ],
+        [
+            249223893,
+            701951353
+        ],
+        [
+            "DU1",
+            1820157377
+        ],
+        [
+            707408010,
+            1820158044
+        ],
+        [
+            637944158,
+            1840181125
+        ],
+        [
+            701951411,
+            701951416
+        ],
+        [
+            701919432,
+            2010116015
+        ],
+        [
+            "RU20",
+            707488308
+        ],
+        [
+            708176999,
+            707460614
+        ],
+        [
+            1820157377,
+            707488329
+        ],
+        [
+            "RU54",
+            130018149
+        ],
+        [
+            701845690,
+            "RU8"
+        ],
+        [
+            "RU4",
+            1820157377
+        ],
+        [
+            "RU50",
+            2010116015
+        ],
+        [
+            707429293,
+            707488308
+        ],
+        [
+            "DU4",
+            708218540
+        ],
+        [
+            "RU51",
+            701837587
+        ],
+        [
+            "DU3",
+            1820158044
+        ],
+        [
+            707488329,
+            1820157377
+        ],
+        [
+            70195143332,
+            1840181098
+        ],
+        [
+            707488329,
+            13001444100
+        ],
+        [
+            "RU26",
+            708218540
+        ],
+        [
+            1820157520,
+            701888996
+        ],
+        [
+            701951353,
+            "RU57"
+        ],
+        [
+            130018148,
+            12237204
+        ]
+    ],
+    "segment_usage_count": {
+        "('RU35', 701840462)": 1,
+        "(701840462, 'RU35')": 1,
+        "(701840462, 701840476)": 1,
+        "(701840476, 701840462)": 1,
+        "(701840476, 701837585)": 1,
+        "(701837585, 701840476)": 1,
+        "(701837585, 701837587)": 2,
+        "(701837587, 701837585)": 2,
+        "(701837587, 'DU9')": 3,
+        "('DU9', 701837587)": 5,
+        "('RU14', 1840181331)": 1,
+        "(1840181331, 'RU14')": 1,
+        "(1840181331, 70740020303)": 2,
+        "(70740020303, 1840181331)": 2,
+        "(70740020303, 1820158044)": 3,
+        "(1820158044, 70740020303)": 3,
+        "(1820158044, 'DU3')": 6,
+        "('DU3', 1820158044)": 8,
+        "('RU17', 701951437)": 1,
+        "(701951437, 'RU17')": 1,
+        "(701951437, 701951416)": 4,
+        "(701951416, 701951437)": 6,
+        "(701951416, 701951411)": 4,
+        "(701951411, 701951416)": 6,
+        "(701951411, 701951353)": 4,
+        "(701951353, 701951411)": 6,
+        "(701951353, 'DU2')": 8,
+        "('DU2', 701951353)": 10,
+        "('RU23', 701951470)": 1,
+        "(701951470, 'RU23')": 1,
+        "(701951470, 701919335)": 1,
+        "(701919335, 701951470)": 1,
+        "(701919335, 701951437)": 3,
+        "(701951437, 701919335)": 3,
+        "('RU51', 701837587)": 1,
+        "(701837587, 'RU51')": 1,
+        "('RU7', 12237145)": 1,
+        "(12237145, 'RU7')": 1,
+        "(12237145, 12237148)": 3,
+        "(12237148, 12237145)": 1,
+        "(12237148, 13001444100)": 3,
+        "(13001444100, 12237148)": 1,
+        "(13001444100, 707488329)": 5,
+        "(707488329, 13001444100)": 3,
+        "(707488329, 1820157377)": 7,
+        "(1820157377, 707488329)": 3,
+        "(1820157377, 'DU1')": 11,
+        "('DU1', 1820157377)": 13,
+        "('RU54', 130018149)": 1,
+        "(130018149, 'RU54')": 1,
+        "(130018149, 1840181329)": 1,
+        "(1840181329, 130018149)": 1,
+        "(1840181329, 1820157863)": 2,
+        "(1820157863, 1840181329)": 2,
+        "(1820157863, 1820158044)": 2,
+        "(1820158044, 1820157863)": 4,
+        "('RU57', 701951353)": 1,
+        "(701951353, 'RU57')": 1,
+        "('RU55', 1840181329)": 1,
+        "(1840181329, 'RU55')": 1,
+        "('RU3', 707460615)": 1,
+        "(707460615, 'RU3')": 1,
+        "(707460615, 707460617)": 1,
+        "(707460617, 707460615)": 1,
+        "(707460617, 1840181330)": 1,
+        "(1840181330, 707460617)": 1,
+        "(1840181330, 249223893)": 1,
+        "(249223893, 1840181330)": 1,
+        "(249223893, 701951353)": 3,
+        "(701951353, 249223893)": 3,
+        "('RU25', 1840181098)": 1,
+        "(1840181098, 'RU25')": 1,
+        "(1840181098, 70195143332)": 3,
+        "(70195143332, 1840181098)": 3,
+        "(70195143332, 1820157520)": 3,
+        "(1820157520, 70195143332)": 3,
+        "(1820157520, 1820157377)": 7,
+        "(1820157377, 1820157520)": 5,
+        "('RU20', 707488308)": 1,
+        "(707488308, 'RU20')": 1,
+        "(707488308, 707429293)": 3,
+        "(707429293, 707488308)": 1,
+        "(707429293, 701888996)": 3,
+        "(701888996, 707429293)": 1,
+        "(701888996, 1820157520)": 4,
+        "(1820157520, 701888996)": 2,
+        "('RU26', 708218540)": 1,
+        "(708218540, 'RU26')": 1,
+        "(708218540, 'DU4')": 1,
+        "('DU4', 708218540)": 3,
+        "('RU82', 707408013)": 1,
+        "(707408013, 'RU82')": 1,
+        "(707408013, 12237227)": 1,
+        "(12237227, 707408013)": 1,
+        "(12237227, 707408010)": 1,
+        "(707408010, 12237227)": 1,
+        "(707408010, 1820158044)": 1,
+        "(1820158044, 707408010)": 1,
+        "('RU24', 260126635)": 1,
+        "(260126635, 'RU24')": 1,
+        "(260126635, 641810860)": 4,
+        "(641810860, 260126635)": 2,
+        "(641810860, 1820157377)": 4,
+        "(1820157377, 641810860)": 2,
+        "('RU22', 701888652)": 1,
+        "(701888652, 'RU22')": 1,
+        "(701888652, 701888996)": 1,
+        "(701888996, 701888652)": 1,
+        "('RU38', 708157760)": 1,
+        "(708157760, 'RU38')": 1,
+        "(708157760, 708157756)": 1,
+        "(708157756, 708157760)": 1,
+        "(708157756, 708157716)": 1,
+        "(708157716, 708157756)": 1,
+        "(708157716, 707460614)": 1,
+        "(707460614, 708157716)": 1,
+        "(707460614, 708176999)": 1,
+        "(708176999, 707460614)": 1,
+        "(708176999, 637944158)": 1,
+        "(637944158, 708176999)": 1,
+        "(637944158, 1840181125)": 2,
+        "(1840181125, 637944158)": 2,
+        "(1840181125, 7081577509)": 2,
+        "(7081577509, 1840181125)": 2,
+        "(7081577509, 11646981058)": 2,
+        "(11646981058, 7081577509)": 2,
+        "(11646981058, 1840181098)": 2,
+        "(1840181098, 11646981058)": 2,
+        "('RU2', 701840444)": 1,
+        "(701840444, 'RU2')": 1,
+        "(701840444, 260126635)": 3,
+        "(260126635, 701840444)": 1,
+        "('RU83', 1840181335)": 1,
+        "(1840181335, 'RU83')": 1,
+        "(1840181335, 707408047)": 1,
+        "(707408047, 1840181335)": 1,
+        "(707408047, 1840181840)": 1,
+        "(1840181840, 707408047)": 1,
+        "(1840181840, 70740020303)": 1,
+        "(70740020303, 1840181840)": 1,
+        "('RU16', 6766512876)": 1,
+        "(6766512876, 'RU16')": 1,
+        "(6766512876, 701951366)": 1,
+        "(701951366, 6766512876)": 1,
+        "(701951366, 701919344)": 1,
+        "(701919344, 701951366)": 1,
+        "(701919344, 701919326)": 1,
+        "(701919326, 701919344)": 1,
+        "(701919326, 701919332)": 2,
+        "(701919332, 701919326)": 2,
+        "(701919332, 701919335)": 2,
+        "(701919335, 701919332)": 2,
+        "('RU8', 701845690)": 1,
+        "(701845690, 'RU8')": 1,
+        "(701845690, 701837585)": 1,
+        "(701837585, 701845690)": 1,
+        "('RU15', 701951372)": 1,
+        "(701951372, 'RU15')": 1,
+        "(701951372, 701919326)": 1,
+        "(701919326, 701951372)": 1,
+        "('RU50', 2010116015)": 1,
+        "(2010116015, 'RU50')": 1,
+        "(2010116015, 701843137)": 2,
+        "(701843137, 2010116015)": 2,
+        "(701843137, 701843133)": 2,
+        "(701843133, 701843137)": 2,
+        "(701843133, 13001444100)": 2,
+        "(13001444100, 701843133)": 2,
+        "('RU13', 1840247203)": 1,
+        "(1840247203, 'RU13')": 1,
+        "(1840247203, 184024720388)": 1,
+        "(184024720388, 1840247203)": 1,
+        "(184024720388, 707408054)": 1,
+        "(707408054, 184024720388)": 1,
+        "(707408054, 130018095)": 1,
+        "(130018095, 707408054)": 1,
+        "(130018095, 1840181331)": 1,
+        "(1840181331, 130018095)": 1,
+        "('RU4', 1820157377)": 1,
+        "(1820157377, 'RU4')": 1,
+        "('RU11', 707496860)": 1,
+        "(707496860, 'RU11')": 1,
+        "(707496860, 707500731)": 2,
+        "(707500731, 707496860)": 2,
+        "(707500731, 249223893)": 2,
+        "(249223893, 707500731)": 2,
+        "('RU19', 637944158)": 1,
+        "(637944158, 'RU19')": 1,
+        "('RU10', 707496850)": 1,
+        "(707496850, 'RU10')": 1,
+        "(707496850, 707496860)": 1,
+        "(707496860, 707496850)": 1,
+        "('RU21', 701919432)": 1,
+        "(701919432, 'RU21')": 1,
+        "(701919432, 2010116015)": 1,
+        "(2010116015, 701919432)": 1,
+        "(1820157863, 130018148)": 2,
+        "(130018148, 12237204)": 2,
+        "(12237204, 3953341836)": 2,
+        "(3953341836, 707488308)": 2,
+        "(1820157377, 'CU1')": 10,
+        "(708218540, 12237145)": 2,
+        "(701951437, 707488226)": 2,
+        "(707488226, 260126671)": 2,
+        "(260126671, 130014767679)": 2,
+        "(130014767679, 707488329)": 2,
+        "(701837587, 701840472)": 2,
+        "(701840472, 701840444)": 2
+    }
+}

@@ -1,0 +1,514 @@
+Coverage_Percentage,Num_RUs,Num_DUs,Cost_RUs,Cost_DUs,Cost_CUs,Cost_Paths,Total_Cost,Total_Distance,Total_Users,FibreRU_DU,FibreDU_CU,RU_Num1cell,RU_Num2cell,RU_Num3cell,DU_Num1cell,DU_Num2cell,DU_Num3cell,UM,MR,MD,CR,FC,Type
+95,22,1,436150,45800,12800,13220570.0,13715320.0,10604,305,61,20,1,3,18,0,1,0,2000,3,3,10,40000,local_search
+
+
+
+
+--------------------------------------------------------------------------------
+
+Results when coverage low: 0.95, UM: 2000, FC: 40000, MR: 3, MD: 3, CR: 10
+
+With the costs of RU(KV): 7150, DU(KW): 10900, DU(KX): 10500, Fibre RU-DU(KL): 400, Fibre DU-CU(KB): 800, Trenching: 80, fibre cost = 17.5, number of fibres = 100, cost per metre for new path: 1830.0 and existing: 100 
+
+RU Cost: 6750, RU Install: 400, DU Cost: 10500, DU Install: 400
+
+RU Base Bandwidth: 10000, DU Base Bandwidth: 400000, DU Total Ports: 100, CU Base Bandwidth: 5000000, CU Total Ports: 500
+
+--------------------------------------------------------------------------------
+
+
+MODEL RESULTS
+
+Cost of road paths: $13,220,570.0
+Cost of RUs: $436,150
+Cost of DUs: $45,800
+CU Cost: $12,800
+
+TOTAL COST: $13,715,320
+13220570.0 + 436150 + 45800 + 12800 = $13715320
+
+
+Number of RUs: 22
+RU Cell Distribution:
+Number of RUs with 1 cell: 1
+Number of RUs with 2 cells: 3
+Number of RUs with 3 cells: 18
+
+Number of DUs: 1
+
+DU Cell Distribution:
+Number of DUs with 1 cell: 0
+Number of DUs with 2 cells: 1
+Number of DUs with 3 cells: 0
+
+Total fibre connections RU to DU: 61
+Total fibre connections DU to CU: 20
+
+
+COVERAGE
+User Coverage: 95.41%
+Count of covered users: 291
+Count of unassigned users: 14
+Total Users: 305
+
+DISTANCE
+Total distance in m: 10604m
+Total distance in km: 10.60 km
+
+
+--------------------------------------------------------------------------------
+
+
+DEVICES SELECTED AND PATHS
+
+selected_rus = ['RU1', 'RU10', 'RU12', 'RU13', 'RU14', 'RU16', 'RU17', 'RU18', 'RU19', 'RU2', 'RU21', 'RU22', 'RU24', 'RU32', 'RU34', 'RU36', 'RU38', 'RU5', 'RU51', 'RU54', 'RU7', 'RU8']
+not_selected_rus = ['RU11', 'RU15', 'RU20', 'RU23', 'RU25', 'RU26', 'RU3', 'RU35', 'RU37', 'RU4', 'RU50', 'RU55', 'RU57', 'RU58', 'RU59', 'RU82', 'RU83', 'RU94']
+selected_dus = ['DU3']
+not_selected_dus = ['DU1', 'DU2', 'DU4', 'DU9']
+
+ru_to_du_connections = [('RU1', 'DU3'), ('RU10', 'DU3'), ('RU12', 'DU3'), ('RU13', 'DU3'), ('RU14', 'DU3'), ('RU16', 'DU3'), ('RU17', 'DU3'), ('RU18', 'DU3'), ('RU19', 'DU3'), ('RU2', 'DU3'), ('RU21', 'DU3'), ('RU22', 'DU3'), ('RU24', 'DU3'), ('RU32', 'DU3'), ('RU34', 'DU3'), ('RU36', 'DU3'), ('RU38', 'DU3'), ('RU5', 'DU3'), ('RU51', 'DU3'), ('RU54', 'DU3'), ('RU7', 'DU3'), ('RU8', 'DU3')]
+du_to_cu_connections = [('DU3', 'CU1')]
+
+
+--------------------------------------------------------------------------------
+
+
+FIBRE CONNECTIONS OVERVIEW
+--------------------------------------------------------------------------------
+DU      Total RUs  Connected RUs                                                
+--------------------------------------------------------------------------------
+DU3     22         RU7, RU8, RU10, RU13, RU14, RU16, RU17, RU19, RU21, RU22     
+                   RU24, RU32, RU34, RU36, RU38, RU51, RU54, RU2, RU5, RU12     
+                   RU18, RU1                                                    
+--------------------------------------------------------------------------------
+TOTALS: 22         
+--------------------------------------------------------------------------------
+
+
+DU USAGE AND CAPACITY OVERVIEW (FIBRE CONNECTIONS AND PORTS):
+--------------------------------------------------------------------------------
+DU        Used Ports        Fibre RU-DU       Fibre DU-CU       Unused Ports      
+--------------------------------------------------------------------------------
+DU3       61                61                16                39                
+--------------------------------------------------------------------------------
+TOTALS:   61                61                16                39                
+--------------------------------------------------------------------------------
+
+
+DU USAGE AND CAPACITY OVERVIEW (BANDWIDTH):
+--------------------------------------------------------------------------------
+DU        Used BW           Available BW      Unused BW         Num DUs           
+--------------------------------------------------------------------------------
+DU3       610000            640000            30000             2                 
+--------------------------------------------------------------------------------
+TOTALS:   610000            640000            30000             2                 
+--------------------------------------------------------------------------------
+
+
+RU USAGE AND CAPACITY
+--------------------------------------------------------------------------------
+RU        Num RUs   Required       Available      Unused        Num Users      
+--------------------------------------------------------------------------------
+RU1       1         10000          10000          0             5              
+RU2       3         30000          30000          0             15             
+RU5       3         30000          30000          0             15             
+RU7       3         30000          30000          0             15             
+RU8       2         16000          20000          4000          8              
+RU10      3         24000          30000          6000          12             
+RU12      3         24000          30000          6000          12             
+RU13      2         20000          20000          0             10             
+RU14      3         30000          30000          0             15             
+RU16      3         30000          30000          0             15             
+RU17      3         30000          30000          0             15             
+RU18      3         30000          30000          0             15             
+RU19      3         30000          30000          0             15             
+RU21      3         30000          30000          0             15             
+RU22      3         30000          30000          0             15             
+RU24      2         12000          20000          8000          6              
+RU32      3         30000          30000          0             15             
+RU34      3         28000          30000          2000          14             
+RU36      3         30000          30000          0             15             
+RU38      3         30000          30000          0             15             
+RU51      3         28000          30000          2000          14             
+RU54      3         30000          30000          0             15             
+--------------------------------------------------------------------------------
+22        61        582000         610000         28000         291            
+--------------------------------------------------------------------------------
+
+
+
+
+User counts 
+------------------------------------------------------------
+Number of users: 305, number of assigned users: 291, number of unassigned users: 14.
+Coverage percentage calculation is: (calculated 95.41%) vs (actual 95.41%)
+
+Assigned Users (291) =>
+ dem_77_user_2, dem_77_user_3, dem_78_user_1, dem_78_user_2, dem_79_user_1, dem_79_user_2, dem_80_user_1, dem_80_user_2, dem_81_user_1, dem_81_user_2, dem_82_user_1, dem_82_user_2, dem_83_user_1, dem_84_user_1, dem_84_user_2, dem_85_user_1, dem_85_user_2, dem_85_user_3, dem_86_user_1, dem_86_user_2, dem_86_user_3, dem_87_user_1, dem_87_user_2, dem_88_user_1, dem_88_user_2, dem_89_user_1, dem_89_user_2, dem_90_user_1, dem_90_user_2, dem_90_user_3, dem_91_user_1, dem_91_user_2, dem_91_user_3, dem_91_user_4, dem_92_user_1, dem_92_user_2, dem_92_user_3, dem_92_user_4, dem_93_user_1, dem_93_user_2, dem_94_user_1, dem_94_user_2, dem_96_user_1, dem_96_user_2, dem_97_user_1, dem_97_user_2, dem_97_user_3, dem_98_user_1, dem_98_user_2, dem_98_user_3, dem_98_user_4, dem_99_user_1, dem_99_user_2, dem_99_user_3, dem_99_user_4, dem_100_user_1, dem_100_user_2, dem_100_user_3, dem_101_user_1, dem_101_user_2, dem_102_user_1, dem_103_user_1, dem_104_user_1, dem_104_user_2, dem_104_user_3, dem_105_user_1, dem_105_user_2, dem_105_user_3, dem_105_user_4, dem_106_user_1, dem_106_user_2, dem_106_user_3, dem_106_user_4, dem_107_user_1, dem_107_user_2, dem_107_user_3, dem_107_user_4, dem_108_user_1, dem_108_user_2, dem_109_user_1, dem_109_user_2, dem_110_user_1, dem_110_user_2, dem_111_user_1, dem_111_user_2, dem_112_user_1, dem_112_user_2, dem_112_user_3, dem_112_user_4, dem_113_user_1, dem_113_user_2, dem_113_user_3, dem_113_user_4, dem_114_user_1, dem_114_user_2, dem_114_user_3, dem_114_user_4, dem_115_user_1, dem_115_user_2, dem_115_user_3, dem_115_user_4, dem_116_user_1, dem_116_user_2, dem_117_user_1, dem_117_user_2, dem_118_user_1, dem_118_user_2, dem_119_user_1, dem_119_user_2, dem_119_user_3, dem_120_user_1, dem_120_user_2, dem_120_user_3, dem_120_user_4, dem_121_user_1, dem_121_user_2, dem_121_user_3, dem_121_user_4, dem_122_user_1, dem_122_user_2, dem_122_user_3, dem_122_user_4, dem_123_user_1, dem_123_user_2, dem_123_user_3, dem_124_user_1, dem_124_user_2, dem_125_user_1, dem_125_user_2, dem_126_user_1, dem_126_user_2, dem_127_user_1, dem_128_user_1, dem_128_user_2, dem_129_user_1, dem_129_user_2, dem_129_user_3, dem_129_user_4, dem_130_user_1, dem_130_user_2, dem_130_user_3, dem_130_user_4, dem_131_user_1, dem_131_user_2, dem_131_user_3, dem_131_user_4, dem_132_user_1, dem_132_user_2, dem_132_user_3, dem_132_user_4, dem_133_user_1, dem_133_user_2, dem_134_user_1, dem_134_user_2, dem_135_user_1, dem_135_user_2, dem_136_user_1, dem_137_user_1, dem_137_user_2, dem_138_user_1, dem_138_user_2, dem_138_user_3, dem_139_user_1, dem_139_user_2, dem_139_user_3, dem_139_user_4, dem_140_user_1, dem_140_user_2, dem_140_user_3, dem_140_user_4, dem_141_user_1, dem_141_user_2, dem_141_user_3, dem_142_user_1, dem_142_user_2, dem_142_user_3, dem_143_user_1, dem_143_user_2, dem_144_user_1, dem_144_user_2, dem_145_user_1, dem_145_user_2, dem_146_user_1, dem_146_user_2, dem_147_user_1, dem_147_user_2, dem_147_user_3, dem_148_user_1, dem_148_user_2, dem_148_user_3, dem_149_user_1, dem_149_user_2, dem_149_user_3, dem_150_user_1, dem_150_user_2, dem_150_user_3, dem_151_user_1, dem_151_user_2, dem_151_user_3, dem_152_user_1, dem_152_user_2, dem_153_user_1, dem_153_user_2, dem_154_user_1, dem_154_user_2, dem_155_user_1, dem_155_user_2, dem_155_user_3, dem_156_user_1, dem_156_user_2, dem_157_user_1, dem_157_user_2, dem_158_user_1, dem_158_user_2, dem_158_user_3, dem_159_user_1, dem_159_user_2, dem_159_user_3, dem_159_user_4, dem_160_user_1, dem_160_user_2, dem_160_user_3, dem_161_user_1, dem_161_user_2, dem_162_user_1, dem_162_user_2, dem_163_user_1, dem_163_user_2, dem_164_user_1, dem_164_user_2, dem_165_user_1, dem_165_user_2, dem_166_user_1, dem_166_user_2, dem_167_user_2, dem_167_user_3, dem_168_user_1, dem_168_user_2, dem_168_user_3, dem_169_user_1, dem_169_user_2, dem_169_user_3, dem_170_user_1, dem_170_user_2, dem_171_user_2, dem_172_user_1, dem_172_user_2, dem_173_user_1, dem_173_user_2, dem_174_user_1, dem_174_user_2, dem_175_user_1, dem_175_user_2, dem_176_user_1, dem_176_user_2, dem_177_user_1, dem_177_user_2, dem_177_user_3, dem_178_user_1, dem_178_user_2, dem_179_user_2, dem_180_user_1, dem_180_user_2, dem_181_user_1, dem_182_user_1, dem_182_user_2, dem_183_user_1, dem_183_user_2, dem_184_user_1, dem_184_user_2, dem_185_user_1, dem_185_user_2, dem_186_user_1, dem_186_user_2, dem_187_user_1, dem_187_user_2, dem_189_user_1, dem_189_user_2, dem_190_user_1, dem_190_user_2, dem_191_user_1, dem_191_user_2, dem_192_user_1, dem_192_user_2, dem_193_user_1, dem_200_user_1, dem_200_user_2, dem_201_user_1, dem_201_user_2, dem_202_user_1, dem_202_user_2,
+
+Unassigned Users (14) =>
+ dem_77_user_1, dem_83_user_2, dem_95_user_1, dem_95_user_2, dem_102_user_2, dem_103_user_2, dem_127_user_2, dem_136_user_2, dem_167_user_1, dem_169_user_4, dem_171_user_1, dem_179_user_1, dem_181_user_2, dem_193_user_2,
+
+
+--------------------------------------------------------------------------------
+
+
+Road Segment Usage Counts:
+12237120 -> 708218540: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+12237145 -> 12237148: Usage Count = 2, Associated RUs: [None], Associated DUs: [None]
+12237145 -> 708218540: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+12237145 -> 701845674: Usage Count = 3, Associated RUs: [None], Associated DUs: [None]
+12237148 -> 13001444100: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+13001444100 -> 707488329: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701843133 -> 13001444100: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+12237204 -> 70188864666: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+184024720388 -> 701888649: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+184024720388 -> 70188864666: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+130018148 -> 701888649: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+130018148 -> 7808416877: Usage Count = 4, Associated RUs: [None], Associated DUs: [None]
+130018148 -> 12237204: Usage Count = 16, Associated RUs: [None], Associated DUs: [None]
+130018149 -> 1840181125: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+130018149 -> 707460620: Usage Count = 3, Associated RUs: [None], Associated DUs: [None]
+130018149 -> 1840181329: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+249223893 -> 701951353: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+249223893 -> 707500733: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+249223893 -> 707500731: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+707488226 -> 260126671: Usage Count = 3, Associated RUs: [None], Associated DUs: [None]
+130014767679 -> 260126671: Usage Count = 4, Associated RUs: [None], Associated DUs: [None]
+13001444149 -> 11646981058: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+707488247 -> 701951494: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+707488247 -> 707488211: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+707488211 -> 707488226: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+707488247 -> 707488219: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701951467 -> 707488219: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+707488211 -> 707488219: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+2010116015 -> 701951494: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701951467 -> 701951494: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+13001444149 -> 260126671: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+707488329 -> 130014767679: Usage Count = 4, Associated RUs: [None], Associated DUs: [None]
+260126671 -> 1840181098: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+637944158 -> 708176999: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+637944158 -> 707460620: Usage Count = 2, Associated RUs: [None], Associated DUs: [None]
+701837585 -> 701840476: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701837585 -> 701837587: Usage Count = 6, Associated RUs: [None], Associated DUs: [None]
+701837585 -> 701845690: Usage Count = 6, Associated RUs: [None], Associated DUs: [None]
+701840462 -> 701840471: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+12237120 -> 701840470: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701840470 -> 701853331: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701853281 -> 701853331: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701853331 -> 701853335: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701840441 -> 701840471: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701840441 -> 701840444: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701840444 -> 701840472: Usage Count = 7, Associated RUs: [None], Associated DUs: [None]
+260126635 -> 701840444: Usage Count = 8, Associated RUs: [None], Associated DUs: [None]
+701853335 -> 701853362: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+641810860 -> 707488329: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701888652 -> 1840195248: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+641810860 -> 1840195248: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+260126635 -> 641810860: Usage Count = 9, Associated RUs: [None], Associated DUs: [None]
+641810860 -> 1820157377: Usage Count = 9, Associated RUs: [None], Associated DUs: [None]
+701840438 -> 701840441: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+260126635 -> 701840438: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701840438 -> 701840458: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701840458 -> 701840471: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701840462 -> 701840476: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701840462 -> 701840472: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701840472 -> 701837587: Usage Count = 7, Associated RUs: [None], Associated DUs: [None]
+701840476 -> 701845673: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701845673 -> 701845690: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701845673 -> 701845674: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701845679 -> 701845690: Usage Count = 5, Associated RUs: [None], Associated DUs: [None]
+701853302 -> 701853281: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+701840777 -> 701853309: Usage Count = 2, Associated RUs: [None], Associated DUs: [None]
+701853309 -> 701853302: Usage Count = 2, Associated RUs: [None], Associated DUs: [None]
+701853347 -> 701840777: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701853335 -> 701853347: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701840777 -> 701845679: Usage Count = 2, Associated RUs: [None], Associated DUs: [None]
+701888996 -> 701888652: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+701888996 -> 1820157520: Usage Count = 14, Associated RUs: [None], Associated DUs: [None]
+701888649 -> 1840181331: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701919326 -> 701919332: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701919326 -> 701919344: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701919326 -> 701951372: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701919332 -> 701919335: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701919335 -> 701951470: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701919335 -> 701951437: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701919341 -> 701919344: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701919341 -> 701919432: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701919344 -> 701951366: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701919432 -> 701919461: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+701919432 -> 2010116015: Usage Count = 2, Associated RUs: [None], Associated DUs: [None]
+701919445 -> 701919448: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701919445 -> 701919461: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+701919448 -> 6766512876: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701919448 -> 708218532: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701951353 -> 701951411: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701951366 -> 701951372: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701951366 -> 6766512876: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701845674 -> 701845679: Usage Count = 3, Associated RUs: [None], Associated DUs: [None]
+70195143332 -> 130014767679: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+70195143332 -> 1820157520: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701951437 -> 707488226: Usage Count = 2, Associated RUs: [None], Associated DUs: [None]
+701951437 -> 701951467: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701951462 -> 701951470: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701951470 -> 701951479: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701919332 -> 701951479: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701919341 -> 701951462: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701951462 -> 701951479: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+12237227 -> 707408010: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+12237227 -> 707408012: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+12237227 -> 707408013: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+707408009 -> 707408025: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+707408009 -> 707408010: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+707408022 -> 1840181335: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+707408022 -> 707408025: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+1840247203 -> 184024720388: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+707408025 -> 707408047: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+707408047 -> 1840181335: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+707429293 -> 707488308: Usage Count = 15, Associated RUs: [None], Associated DUs: [None]
+707429293 -> 707429301: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+707429293 -> 701888996: Usage Count = 15, Associated RUs: [None], Associated DUs: [None]
+707429301 -> 701888652: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+707460614 -> 708176999: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+707460614 -> 707460615: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+707460615 -> 707460617: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+1840181330 -> 708157724: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+708157716 -> 708157724: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+708157724 -> 708157756: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+707460617 -> 1840181330: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+1840181330 -> 249223893: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+707460620 -> 707496850: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+707488308 -> 11646981058: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+707496850 -> 708176999: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+707496850 -> 707496854: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+707496850 -> 707496860: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+707496854 -> 708176966: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+707496860 -> 708176966: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+707496860 -> 707500731: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+707500731 -> 707460617: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+707500733 -> 708157730: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+708157729 -> 708157760: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+707500733 -> 708157729: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+708157729 -> 708157730: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+708157730 -> 708157760: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+708157756 -> 708157760: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+707460614 -> 708157716: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+708157716 -> 708157756: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+708176966 -> 707460615: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+708218540 -> 708218532: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+1820157377 -> 707488329: Usage Count = 4, Associated RUs: [None], Associated DUs: [None]
+1820157520 -> 1820157377: Usage Count = 14, Associated RUs: [None], Associated DUs: [None]
+1820157863 -> 1840181331: Usage Count = 2, Associated RUs: [None], Associated DUs: [None]
+1820157863 -> 130018148: Usage Count = 20, Associated RUs: [None], Associated DUs: [None]
+1820157863 -> 1840181329: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+1820158044 -> 70740020303: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+1820158044 -> 1820157863: Usage Count = 22, Associated RUs: [None], Associated DUs: [None]
+70740020303 -> 1840181840: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+1840181840 -> 130018095: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701840437 -> 701840462: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701840437 -> 701840458: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+1840181840 -> 707408047: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+70740020303 -> 707408009: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+707408012 -> 707408022: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+707408013 -> 707408012: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+1840181098 -> 707429293: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+1840181098 -> 70195143332: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+1840181125 -> 7081577509: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+7081577509 -> 13001444149: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+7081577509 -> 11646981058: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+1840181125 -> 637944158: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+1840181130 -> 7808416877: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+1840181130 -> 1840181125: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701843137 -> 2010116015: Usage Count = 2, Associated RUs: [None], Associated DUs: [None]
+701845674 -> 9900958648: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+9900958649 -> 9900958651: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+9900958651 -> 9900958655: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+9900958648 -> 9900958655: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+9900958649 -> 9900958655: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+9900958648 -> 9900958649: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701843133 -> 701843137: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+12237148 -> 701843137: Usage Count = 2, Associated RUs: [None], Associated DUs: [None]
+707460620 -> 1840181329: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+1840181329 -> 1820158044: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+1840181331 -> 70740020303: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+707408053 -> 707408054: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+184024720388 -> 707408054: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+707408054 -> 130018095: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+130018095 -> 1840181332: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+130018095 -> 1840181331: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+707408053 -> 1840181332: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+707408053 -> 1840247203: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+1840181332 -> 1840181335: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+701951416 -> 701951437: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+701951411 -> 701951416: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+3953341836 -> 1840181130: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+3953341836 -> 707488308: Usage Count = 15, Associated RUs: [None], Associated DUs: [None]
+3953341836 -> 12237204: Usage Count = 16, Associated RUs: [None], Associated DUs: [None]
+701919445 -> 6766512876: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+707408010 -> 1820158044: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+7808416877 -> 130018149: Usage Count = 3, Associated RUs: [None], Associated DUs: [None]
+11646981058 -> 1840181098: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+RU3 -> 707460615: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+RU4 -> 1820157377: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+RU7 -> 12237145: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+RU8 -> 701845690: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+RU10 -> 707496850: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+RU11 -> 707496860: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+RU13 -> 1840247203: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+RU14 -> 1840181331: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+RU15 -> 701951372: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+RU16 -> 6766512876: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+RU17 -> 701951437: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+RU19 -> 637944158: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+RU20 -> 707488308: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+RU21 -> 701919432: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+RU22 -> 701888652: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+RU23 -> 701951470: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+RU24 -> 260126635: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+RU25 -> 1840181098: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+RU26 -> 708218540: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+RU32 -> 701951411: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+RU34 -> 701853281: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+RU35 -> 701840462: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+RU36 -> 701853302: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+RU37 -> 9900958649: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+RU38 -> 708157760: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+RU50 -> 2010116015: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+RU51 -> 701837587: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+RU54 -> 7808416877: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+RU55 -> 1840181329: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+RU57 -> 701951353: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+RU58 -> 701919445: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+RU59 -> 701951467: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+RU82 -> 707408013: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+RU83 -> 1840181335: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+RU94 -> 12237120: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+RU2 -> 701840444: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+RU5 -> 1820158044: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+RU12 -> 13001444149: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+RU18 -> 707488226: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+RU1 -> 3953341836: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+DU2 -> 701951353: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+DU3 -> 1820158044: Usage Count = 23, Associated RUs: [None], Associated DUs: [None]
+DU4 -> 708218540: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+DU9 -> 701837587: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+DU1 -> 1820157377: Usage Count = 0, Associated RUs: [None], Associated DUs: [None]
+CU1 -> 1820157377: Usage Count = 1, Associated RUs: [None], Associated DUs: [None]
+
+
+===== Best Solution: greedy5 =====
+
+===== New Best Solutions Log =====
+[greedy7][Iter 3] New best with fitness 24882490.00 and cost 24882490.00 from N1 (total mutations: 2; mutations: mutate_ru, mutate_ru)
+[greedy7][Iter 4] New best with fitness 20238160.00 and cost 20238160.00 from N1 (total mutations: 3; mutations: mutate_ru, rebuild_paths, mutate_users)
+[greedy7][Iter 8] New best with fitness 20214710.00 and cost 20214710.00 from N1 (total mutations: 4; mutations: rebuild_paths, mutate_ru, mutate_ru, mutate_ru)
+[greedy7][Iter 11] New best with fitness 20049530.00 and cost 19799530.00 from N1 (total mutations: 2; mutations: mutate_ru, swap_rus)
+[greedy7][Iter 12] New best with fitness 20916280.00 and cost 19666280.00 from N1 (total mutations: 5; mutations: mutate_ru, rebuild_paths, mutate_ru, mutate_users, mutate_ru)
+[greedy7][Iter 13] New best with fitness 22891110.00 and cost 18391110.00 from N1 (total mutations: 6; mutations: mutate_ru, mutate_users, mutate_ru, swap_rus, mutate_users, mutate_ru)
+[greedy7][Iter 14] New best with fitness 22153850.00 and cost 17653850.00 from N1 (total mutations: 3; mutations: swap_rus, rebuild_paths, mutate_users)
+[greedy7][Iter 15] New best with fitness 24439010.00 and cost 18189010.00 from N1 (total mutations: 2; mutations: rebuild_paths, mutate_ru)
+[greedy7][Iter 16] New best with fitness 27166360.00 and cost 18166360.00 from N1 (total mutations: 1; mutations: mutate_ru)
+[greedy7][Iter 17] New best with fitness 19783760.00 and cost 17533760.00 from N1 (total mutations: 6; mutations: mutate_ru, rebuild_paths, mutate_ru, mutate_users, mutate_ru, mutate_users)
+[greedy7][Iter 18] New best with fitness 20169630.00 and cost 16419630.00 from N1 (total mutations: 6; mutations: rebuild_paths, mutate_ru, mutate_ru, swap_rus, mutate_users, mutate_ru)
+[greedy7][Iter 19] New best with fitness 18163550.00 and cost 17413550.00 from N1 (total mutations: 6; mutations: mutate_ru, rebuild_paths, mutate_ru, rebuild_paths, mutate_ru, rebuild_paths)
+[greedy7][Iter 20] New best with fitness 19156800.00 and cost 17406800.00 from N1 (total mutations: 3; mutations: mutate_ru, mutate_ru, swap_rus)
+[greedy7][Iter 21] New best with fitness 18446850.00 and cost 17446850.00 from N1 (total mutations: 2; mutations: rebuild_paths, mutate_ru)
+[greedy7][Iter 22] New best with fitness 17455200.00 and cost 17455200.00 from N1 (total mutations: 2; mutations: swap_rus, rebuild_paths)
+[greedy7][Iter 27] New best with fitness 16202220.00 and cost 15452220.00 from N1 (total mutations: 3; mutations: mutate_ru, mutate_ru, mutate_ru)
+[greedy7][Iter 28] New best with fitness 19520680.00 and cost 15020680.00 from N1 (total mutations: 5; mutations: mutate_users, mutate_ru, mutate_ru, mutate_ru, rebuild_paths)
+[greedy7][Iter 29] New best with fitness 19520680.00 and cost 15020680.00 from N1 (total mutations: 4; mutations: rebuild_paths, mutate_users, mutate_users, mutate_ru)
+[greedy7][Iter 30] New best with fitness 19520680.00 and cost 15020680.00 from N1 (total mutations: 1; mutations: rebuild_paths)
+[greedy7][Iter 31] New best with fitness 16433560.00 and cost 16433560.00 from N1 (total mutations: 5; mutations: rebuild_paths, mutate_ru, mutate_ru, mutate_ru, mutate_ru)
+[greedy7][Iter 33] New best with fitness 16426010.00 and cost 16426010.00 from N1 (total mutations: 1; mutations: mutate_ru)
+[greedy7][Iter 39] New best with fitness 16418460.00 and cost 16418460.00 from N1 (total mutations: 1; mutations: mutate_ru)
+[greedy7][Iter 47] New best with fitness 15854820.00 and cost 15854820.00 from N1 (total mutations: 2; mutations: rebuild_paths, swap_rus)
+[greedy15][Iter 52] New best with fitness 14357630.00 and cost 14107630.00 from N1 (total mutations: 5; mutations: mutate_ru, swap_rus, mutate_users, mutate_users, swap_rus)
+[greedy15][Iter 53] New best with fitness 13722620.00 and cost 13472620.00 from N1 (total mutations: 2; mutations: rebuild_paths, mutate_users)
+[greedy15][Iter 54] New best with fitness 15043490.00 and cost 14043490.00 from N1 (total mutations: 4; mutations: mutate_ru, swap_rus, mutate_users, mutate_ru)
+[greedy15][Iter 55] New best with fitness 15535940.00 and cost 14035940.00 from N1 (total mutations: 1; mutations: mutate_ru)
+[greedy15][Iter 56] New best with fitness 15740080.00 and cost 15240080.00 from N1 (total mutations: 2; mutations: swap_rus, rebuild_paths)
+[greedy15][Iter 57] New best with fitness 16394740.00 and cost 15644740.00 from N1 (total mutations: 1; mutations: swap_rus)
+[greedy15][Iter 58] New best with fitness 15953710.00 and cost 15203710.00 from N1 (total mutations: 2; mutations: mutate_users, rebuild_paths)
+[greedy15][Iter 59] New best with fitness 17587500.00 and cost 15337500.00 from N1 (total mutations: 3; mutations: mutate_ru, swap_rus, mutate_ru)
+[greedy15][Iter 60] New best with fitness 17049130.00 and cost 13549130.00 from N1 (total mutations: 4; mutations: swap_rus, mutate_users, rebuild_paths, mutate_ru)
+[greedy15][Iter 61] New best with fitness 16868720.00 and cost 14118720.00 from N1 (total mutations: 6; mutations: mutate_ru, rebuild_paths, mutate_ru, mutate_ru, rebuild_paths, mutate_ru)
+[greedy15][Iter 62] New best with fitness 15904870.00 and cost 15404870.00 from N1 (total mutations: 4; mutations: mutate_ru, rebuild_paths, swap_rus, rebuild_paths)
+[greedy15][Iter 63] New best with fitness 19106460.00 and cost 13106460.00 from N1 (total mutations: 5; mutations: mutate_ru, rebuild_paths, mutate_ru, mutate_ru, rebuild_paths)
+[greedy15][Iter 64] New best with fitness 17339700.00 and cost 14839700.00 from N1 (total mutations: 5; mutations: swap_rus, rebuild_paths, swap_rus, rebuild_paths, mutate_users)
+[greedy15][Iter 65] New best with fitness 19682770.00 and cost 13432770.00 from N1 (total mutations: 1; mutations: mutate_ru)
+[greedy15][Iter 66] New best with fitness 19809660.00 and cost 14059660.00 from N1 (total mutations: 3; mutations: mutate_ru, rebuild_paths, swap_rus)
+[greedy15][Iter 67] New best with fitness 20043900.00 and cost 14293900.00 from N1 (total mutations: 1; mutations: swap_rus)
+[greedy15][Iter 68] New best with fitness 20208240.00 and cost 15458240.00 from N1 (total mutations: 1; mutations: mutate_ru)
+[greedy15][Iter 69] New best with fitness 19970860.00 and cost 15470860.00 from N1 (total mutations: 4; mutations: swap_rus, mutate_users, mutate_ru, rebuild_paths)
+[greedy15][Iter 70] New best with fitness 18334140.00 and cost 16084140.00 from N1 (total mutations: 6; mutations: mutate_ru, rebuild_paths, swap_rus, mutate_ru, rebuild_paths, mutate_users)
+[greedy15][Iter 71] New best with fitness 17842490.00 and cost 16092490.00 from N1 (total mutations: 2; mutations: rebuild_paths, mutate_ru)
+[greedy15][Iter 72] New best with fitness 17481360.00 and cost 15231360.00 from N1 (total mutations: 1; mutations: mutate_ru)
+[greedy15][Iter 73] New best with fitness 16962940.00 and cost 13962940.00 from N1 (total mutations: 2; mutations: swap_rus, rebuild_paths)
+[greedy15][Iter 74] New best with fitness 19915890.00 and cost 13915890.00 from N1 (total mutations: 2; mutations: rebuild_paths, mutate_ru)
+[greedy15][Iter 76] New best with fitness 17945870.00 and cost 16445870.00 from N1 (total mutations: 3; mutations: mutate_ru, mutate_ru, mutate_ru)
+[greedy15][Iter 77] New best with fitness 21914870.00 and cost 16414870.00 from N1 (total mutations: 1; mutations: mutate_ru)
+[greedy15][Iter 78] New best with fitness 26936740.00 and cost 11686740.00 from N1 (total mutations: 2; mutations: mutate_ru, mutate_ru)
+[greedy15][Iter 79] New best with fitness 26696120.00 and cost 11696120.00 from N1 (total mutations: 2; mutations: mutate_ru, rebuild_paths)
+[greedy15][Iter 80] New best with fitness 26696120.00 and cost 11696120.00 from N1 (total mutations: 2; mutations: mutate_users, rebuild_paths)
+[greedy15][Iter 81] New best with fitness 24242630.00 and cost 12492630.00 from N1 (total mutations: 4; mutations: mutate_ru, mutate_users, mutate_users, mutate_ru)
+[greedy15][Iter 82] New best with fitness 28823260.00 and cost 12573260.00 from N1 (total mutations: 6; mutations: mutate_ru, rebuild_paths, mutate_users, swap_rus, rebuild_paths, mutate_users)
+[greedy15][Iter 83] New best with fitness 28784530.00 and cost 11784530.00 from N1 (total mutations: 3; mutations: swap_rus, mutate_users, mutate_users)
+[greedy15][Iter 84] New best with fitness 29623260.00 and cost 11623260.00 from N1 (total mutations: 2; mutations: mutate_users, rebuild_paths)
+[greedy15][Iter 85] New best with fitness 27771260.00 and cost 12521260.00 from N1 (total mutations: 4; mutations: mutate_users, mutate_ru, mutate_ru, mutate_ru)
+[greedy15][Iter 86] New best with fitness 27549830.00 and cost 12299830.00 from N1 (total mutations: 2; mutations: rebuild_paths, mutate_users)
+[greedy15][Iter 87] New best with fitness 22521090.00 and cost 13771090.00 from N1 (total mutations: 6; mutations: mutate_ru, mutate_ru, rebuild_paths, mutate_ru, mutate_ru, rebuild_paths)
+[greedy15][Iter 88] New best with fitness 21444640.00 and cost 13194640.00 from N1 (total mutations: 5; mutations: rebuild_paths, mutate_ru, mutate_users, rebuild_paths, mutate_ru)
+[greedy15][Iter 89] New best with fitness 21698930.00 and cost 16198930.00 from N1 (total mutations: 6; mutations: mutate_ru, mutate_ru, mutate_ru, mutate_ru, mutate_users, swap_rus)
+[greedy15][Iter 90] New best with fitness 24267390.00 and cost 15767390.00 from N1 (total mutations: 4; mutations: mutate_users, mutate_users, swap_rus, mutate_ru)
+[greedy15][Iter 91] New best with fitness 23484090.00 and cost 16734090.00 from N1 (total mutations: 5; mutations: mutate_ru, mutate_ru, mutate_ru, mutate_users, mutate_users)
+[greedy15][Iter 92] New best with fitness 29687990.00 and cost 16687990.00 from N1 (total mutations: 1; mutations: mutate_ru)
+[greedy15][Iter 93] New best with fitness 22675100.00 and cost 14175100.00 from N1 (total mutations: 6; mutations: swap_rus, mutate_ru, mutate_users, rebuild_paths, mutate_users, mutate_users)
+[greedy15][Iter 94] New best with fitness 22551190.00 and cost 14801190.00 from N1 (total mutations: 1; mutations: mutate_ru)
+[greedy15][Iter 95] New best with fitness 27904040.00 and cost 16404040.00 from N1 (total mutations: 4; mutations: mutate_ru, mutate_ru, rebuild_paths, mutate_ru)
+[greedy15][Iter 96] New best with fitness 25008420.00 and cost 16008420.00 from N1 (total mutations: 4; mutations: rebuild_paths, swap_rus, mutate_ru, mutate_ru)
+[greedy15][Iter 97] New best with fitness 23170360.00 and cost 17170360.00 from N1 (total mutations: 6; mutations: swap_rus, mutate_ru, swap_rus, mutate_users, rebuild_paths, mutate_ru)
+[greedy15][Iter 98] New best with fitness 25493860.00 and cost 17993860.00 from N1 (total mutations: 3; mutations: mutate_ru, rebuild_paths, mutate_users)
+[greedy15][Iter 99] New best with fitness 21251410.00 and cost 18001410.00 from N1 (total mutations: 1; mutations: mutate_ru)
+[greedy15_clone][Iter 115] New best with fitness 14438150.00 and cost 14188150.00 from N1 (total mutations: 5; mutations: mutate_ru, mutate_ru, rebuild_paths, mutate_users, swap_rus)
+[greedy15_clone][Iter 116] New best with fitness 17206740.00 and cost 13706740.00 from N1 (total mutations: 6; mutations: mutate_ru, mutate_ru, mutate_users, swap_rus, rebuild_paths, mutate_ru)
+[greedy15_clone][Iter 117] New best with fitness 19037620.00 and cost 12787620.00 from N1 (total mutations: 1; mutations: mutate_ru)
+[greedy15_clone][Iter 118] New best with fitness 25248270.00 and cost 12748270.00 from N1 (total mutations: 4; mutations: rebuild_paths, mutate_ru, mutate_users, mutate_users)
+[greedy15_clone][Iter 119] New best with fitness 25248270.00 and cost 12748270.00 from N1 (total mutations: 1; mutations: rebuild_paths)
+[greedy15_clone][Iter 120] New best with fitness 22248270.00 and cost 12748270.00 from N1 (total mutations: 2; mutations: mutate_ru, swap_rus)
+[greedy15_clone][Iter 121] New best with fitness 25292780.00 and cost 11792780.00 from N1 (total mutations: 6; mutations: swap_rus, mutate_ru, mutate_users, mutate_ru, rebuild_paths, mutate_ru)
+[greedy15_clone][Iter 122] New best with fitness 25292780.00 and cost 11792780.00 from N1 (total mutations: 1; mutations: mutate_users)
+[greedy15_clone][Iter 123] New best with fitness 26832110.00 and cost 14082110.00 from N1 (total mutations: 5; mutations: mutate_users, swap_rus, mutate_ru, mutate_users, mutate_ru)
+[greedy15_clone][Iter 124] New best with fitness 30364680.00 and cost 13864680.00 from N1 (total mutations: 1; mutations: mutate_ru)
+[greedy15_clone][Iter 126] New best with fitness 33608660.00 and cost 12358660.00 from N1 (total mutations: 6; mutations: mutate_users, mutate_ru, rebuild_paths, mutate_ru, mutate_ru, swap_rus)
+[greedy15_clone][Iter 127] New best with fitness 36074710.00 and cost 12324710.00 from N1 (total mutations: 1; mutations: mutate_ru)
+[greedy15_clone][Iter 128] New best with fitness 37074710.00 and cost 12324710.00 from N1 (total mutations: 1; mutations: mutate_users)
+[greedy15_clone][Iter 129] New best with fitness 31331570.00 and cost 12081570.00 from N1 (total mutations: 3; mutations: swap_rus, mutate_ru, mutate_users)
+[greedy15_clone][Iter 130] New best with fitness 25171060.00 and cost 11421060.00 from N1 (total mutations: 3; mutations: mutate_ru, mutate_users, rebuild_paths)
+[greedy15_clone][Iter 131] New best with fitness 23987570.00 and cost 11737570.00 from N1 (total mutations: 4; mutations: mutate_users, mutate_ru, rebuild_paths, mutate_ru)
+[greedy15_clone][Iter 132] New best with fitness 24077950.00 and cost 12077950.00 from N1 (total mutations: 1; mutations: swap_rus)
+[greedy15_clone][Iter 133] New best with fitness 22843350.00 and cost 12843350.00 from N1 (total mutations: 3; mutations: mutate_ru, mutate_users, swap_rus)
+[greedy15_clone][Iter 134] New best with fitness 21942170.00 and cost 13692170.00 from N1 (total mutations: 1; mutations: mutate_ru)
+[greedy15_clone][Iter 135] New best with fitness 21942170.00 and cost 13692170.00 from N1 (total mutations: 1; mutations: rebuild_paths)
+[greedy15_clone][Iter 136] New best with fitness 24926270.00 and cost 13676270.00 from N1 (total mutations: 1; mutations: mutate_ru)
+[greedy15_clone][Iter 137] New best with fitness 29119830.00 and cost 13119830.00 from N1 (total mutations: 3; mutations: mutate_ru, mutate_ru, rebuild_paths)
+[greedy15_clone][Iter 138] New best with fitness 32017180.00 and cost 10517180.00 from N1 (total mutations: 3; mutations: mutate_ru, swap_rus, rebuild_paths)
+[greedy15_clone][Iter 139] New best with fitness 31384000.00 and cost 9884000.00 from N1 (total mutations: 6; mutations: rebuild_paths, swap_rus, rebuild_paths, mutate_ru, mutate_ru, mutate_ru)
+[greedy15_clone][Iter 140] New best with fitness 30000050.00 and cost 10750050.00 from N1 (total mutations: 3; mutations: rebuild_paths, mutate_ru, rebuild_paths)
+[greedy15_clone][Iter 141] New best with fitness 29232190.00 and cost 11732190.00 from N1 (total mutations: 6; mutations: rebuild_paths, mutate_users, mutate_users, mutate_ru, rebuild_paths, mutate_ru)
+[greedy15_clone][Iter 142] New best with fitness 27062460.00 and cost 11562460.00 from N1 (total mutations: 3; mutations: mutate_users, mutate_ru, mutate_ru)
+[greedy15_clone][Iter 143] New best with fitness 25586810.00 and cost 13836810.00 from N1 (total mutations: 1; mutations: mutate_ru)
+[greedy15_clone][Iter 144] New best with fitness 21860260.00 and cost 13860260.00 from N1 (total mutations: 1; mutations: mutate_ru)
+[greedy15_clone][Iter 145] New best with fitness 21585940.00 and cost 13085940.00 from N1 (total mutations: 6; mutations: rebuild_paths, mutate_users, mutate_users, rebuild_paths, mutate_ru, mutate_ru)
+[greedy15_clone][Iter 146] New best with fitness 21585940.00 and cost 13085940.00 from N1 (total mutations: 2; mutations: mutate_users, rebuild_paths)
+[greedy15_clone][Iter 147] New best with fitness 23331460.00 and cost 14081460.00 from N1 (total mutations: 2; mutations: rebuild_paths, swap_rus)
+[greedy15_clone][Iter 148] New best with fitness 22625700.00 and cost 14625700.00 from N1 (total mutations: 5; mutations: rebuild_paths, mutate_ru, rebuild_paths, mutate_ru, mutate_ru)
+[greedy15_clone][Iter 149] New best with fitness 21383250.00 and cost 14633250.00 from N1 (total mutations: 1; mutations: mutate_ru)
+[greedy15_clone_clone][Iter 167] New best with fitness 14078120.00 and cost 14078120.00 from N1 (total mutations: 3; mutations: mutate_ru, swap_rus, rebuild_paths)
+[greedy15_clone_clone][Iter 201] New best with fitness 14070570.00 and cost 14070570.00 from N1 (total mutations: 1; mutations: mutate_ru)
+[greedy15_clone_clone][Iter 221] New best with fitness 13757640.00 and cost 13757640.00 from N1 (total mutations: 1; mutations: rebuild_paths)
+
+===== Mutation Frequency Summary =====
+mutate_ru: 149
+rebuild_paths: 76
+mutate_users: 61
+swap_rus: 43
