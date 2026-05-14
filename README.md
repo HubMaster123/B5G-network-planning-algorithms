@@ -1,3 +1,7 @@
+## Note
+This repository is a fork of the [B5G Network Planning Algorithms](https://github.com/breezy-codes/B5G-network-planning-algorithms) by Laird et al. (2025).  
+The work in this fork contains my original contributions for the Honours thesis "Optimisation Approach to Redundant Pathways for Resilient Telecommunication Networks" (GA + k-shortest path hybrid).
+
 # Code Repository
 
 This repository contains the complete codebase for my **Honours year project**, based on research into cost-effective deployment and optimisation of next-generation (B5G/6G) reconfigurable RAN and optical X-haul networks. It includes implementations, datasets, and utilities for generating, analysing, and optimising network configurations.
