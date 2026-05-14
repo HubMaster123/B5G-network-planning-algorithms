@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+
+title: "B5G Network Planning Algorithms"
+
+message: >
+  If you use this repository, datasets, or implementations
+  in academic work, please cite the repository.
+
+type: software
+
+authors:
+  - family-names: "Laird"
+    given-names: "Brianna"
+    affiliation: "Deakin University"
+    orcid: "https://orcid.org/0009-0005-9841-3691"
+  - family-names: "Ranaweera"
+    given-names: "Chathurika"
+    affiliation: "Deakin University"
+    orcid: "https://orcid.org/0000-0002-0996-1081"
+  - family-names: "Ugon"
+    given-names: "Julien"
+    affiliation: "Deakin University"
+    orcid: "https://orcid.org/0000-0001-5290-8051"
+
+abstract: >
+  Implementations of GEGASM, GEGA, greedy heuristics,
+  and CPLEX-based optimisation approaches for resilient
+  B5G optical x-haul and O-RAN network planning.
+
+keywords:
+  - O-RAN
+  - Beyond 5G
+  - Network Planning
+  - MILP
+  - Genetic Algorithm
+  - Telecommunications
+  - Optical X-haul
+
+license: "GPL-3.0"
+
+repository-code: "https://github.com/breezy-codes/B5G-network-planning-algorithms"
+
+url: "https://github.com/breezy-codes/B5G-network-planning-algorithms"
+
+version: "1.0.0"
+
+date-released: 2025-09-18

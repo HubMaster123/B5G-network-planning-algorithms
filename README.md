@@ -36,6 +36,25 @@ The project explores deployment strategies for next-generation (B5G/6G) reconfig
 
 ---
 
+## Citation
+
+If you use this repository, datasets, or implementations in academic work, please cite this repository.
+
+GitHub provides a built-in **"Cite this repository"** option via the repository sidebar.
+
+### BibTeX
+
+```bibtex
+@software{laird2025networkplanning,
+  author = {Laird, Brianna and Ranaweera, Chathurika and Ugon, Julien},
+  title        = {B5G Network Planning Algorithms},
+  year         = {2025-09-15},
+  url          = {https://github.com/breezy-codes/B5G-network-planning-algorithms}
+}
+```
+
+---
+
 ## Repository Structure
 
 The project is organised into modular components. Below is the folder layout, along with a description of each directory:
