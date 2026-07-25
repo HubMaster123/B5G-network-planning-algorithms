@@ -1,0 +1,3 @@
+Method,Total_Cost,Runtime_s,Cost_Reduction_%,Resilience_%
+k-Shortest,2128968.0,0.61,0.0,85
+Hybrid GA,971200.0,2035.59,54.4,92

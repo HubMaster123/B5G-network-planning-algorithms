@@ -1,0 +1,3 @@
+Method,Total_Cost,Runtime_Seconds,Avg_Paths_per_Demand,Cost_Reduction_%
+k-Shortest Paths,639210,0.01,3,0
+Genetic Algorithm,196800,0.7,3,69.2

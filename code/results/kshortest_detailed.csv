@@ -1,0 +1,11 @@
+demand,method,num_paths,total_cost
+node_0→node_79,k-shortest,3,73290
+node_14→node_53,k-shortest,3,70570
+node_27→node_68,k-shortest,3,63860
+node_3→node_77,k-shortest,3,51440
+node_11→node_69,k-shortest,3,40070
+node_22→node_55,k-shortest,3,77470
+node_30→node_70,k-shortest,3,20430
+node_8→node_48,k-shortest,3,88210
+node_19→node_65,k-shortest,3,71480
+node_37→node_72,k-shortest,3,82390
