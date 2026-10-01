@@ -1,7 +1,7 @@
 {
-  "best_fitness": 988071.6837548643,
-  "best_deployment_cost": 448071.6837548641,
-  "seed_unique_cost": 448071.6837548641,
+  "best_fitness": 988071.6837548641,
+  "best_deployment_cost": 448071.68375486415,
+  "seed_unique_cost": 448071.68375486415,
   "yen_mut_pb": 0.3,
   "pair_frac": 0.1,
   "individual": [

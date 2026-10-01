@@ -1,0 +1,39 @@
+\begin{algorithm}[H]
+\caption{Pure Genetic Algorithm for Redundant Pathways}
+\label{alg:pure}
+\begin{algorithmic}[1]
+\Require Graph $G=(V,E,c)$, demands $D=\{(s_i,t_i,k)\}$, population size $N$, generations $T$, parameters $L$, $p_{\mathrm{yen}}$, $f_{\mathrm{pair}}$
+\Ensure Individual of lowest unique-edge cost
+\State Initialise population $P$ of $N$ individuals
+\For{each individual $X \in P$}
+    \For{each demand $(s,t,k) \in D$}
+        \State Generate $k$ paths (cost-weighted $L$-shortest with probability $0.6$, otherwise a random walk)
+    \EndFor
+\EndFor
+\State Replace $P[1]$ with the exact $k$-shortest individual and record its unique-edge cost
+\For{generation $g = 1$ to $T$}
+    \State Evaluate fitness of every individual in $P$ \Comment{Fitness = unique-edge cost + overlap penalty}
+    \State Select parents by tournament selection
+    \State Create offspring by two-point exchange of demand groups
+    \For{each offspring}
+        \For{each demand}
+            \State Draw $r$ near $k/2$, with $1 \le r \le k-1$
+            \State Take $r$ paths from parent A and $k-r$ paths from parent B
+            \State Add them one at a time, alternating parents, each time the unused path with least edge overlap against the child so far
+        \EndFor
+        \State Repair: restore exactly $k$ valid paths per demand
+    \EndFor
+    \For{each offspring, with mutation probability $p_m$}
+        \If{random draw $< p_{\mathrm{yen}}$}
+            \State Reset a fraction $f_{\mathrm{pair}}$ of demands to that demand's $k$-shortest paths
+        \Else
+            \State Replace selected paths by a cost-weighted draw from the $L$ shortest paths
+        \EndIf
+        \State Repair
+    \EndFor
+    \State Replace $P$ with the offspring
+    \State Update the unique-edge-cost archive from the seed, the current population, and the hall of fame
+\EndFor
+\State \Return the archive individual of lowest unique-edge cost
+\end{algorithmic}
+\end{algorithm}

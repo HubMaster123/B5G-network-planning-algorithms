@@ -1,0 +1,16 @@
+\begin{algorithm}[H]
+\caption{Hybrid GA seeded with $k$-shortest paths}
+\label{alg:hybrid}
+\begin{algorithmic}[1]
+\Require Graph $G=(V,E,c)$, demands $D=\{(s_i,t_i,k)\}$, population size $N$, generations $T$, parameters $L$, $p_{\mathrm{yen}}$, $f_{\mathrm{pair}}$
+\Ensure Individual of lowest unique-edge cost
+\For{each demand $(s,t,k) \in D$}
+    \State Compute a pool of up to six simple paths with Yen's algorithm
+\EndFor
+\State Initialise $P$ by sampling $k$ paths from each demand's pool
+\State Replace $P[1]$ with the exact $k$-shortest individual and record its unique-edge cost
+\State Run the same generational loop as Algorithm~\ref{alg:pure}
+\Comment{same fitness, parent-mix crossover, two mutations, repair, unique-edge archive}
+\State \Return the archive individual of lowest unique-edge cost
+\end{algorithmic}
+\end{algorithm}

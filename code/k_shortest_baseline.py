@@ -1,6 +1,7 @@
 """
 k-Shortest Paths Baseline for Redundant Pathways
-Clean, reusable baseline for comparison with GA
+Shared baseline for fair comparison with GA / Hybrid
+Cost = sum of unique edge costs across all demands
 """
 
 import time
@@ -10,40 +11,54 @@ from itertools import islice
 
 
 def run_k_shortest_baseline(G, demands, k=3):
-    """Run k-Shortest Paths baseline and return results + runtime"""
+    """
+    Returns
+    -------
+    total_cost : float
+        Deployment cost using unique edges across all demands
+    runtime : float
+    details : DataFrame
+        Optional per-demand info (for debugging)
+    """
     print("🚀 Running k-Shortest Paths Baseline...")
     start = time.time()
-    results = []
-    
+
+    all_edges = set()
+    rows = []
+
     for s, t, _ in demands:
         try:
-            # Get up to k shortest simple paths
             paths = list(islice(nx.shortest_simple_paths(G, s, t, weight='cost'), k))
-            total_cost = sum(sum(G[u][v]['cost'] for u, v in zip(p, p[1:])) for p in paths)
-            
-            results.append({
+            demand_edges = set()
+            for p in paths:
+                for u, v in zip(p, p[1:]):
+                    e = tuple(sorted([u, v]))
+                    demand_edges.add(e)
+                    all_edges.add(e)
+            demand_cost = sum(G[u][v]['cost'] for u, v in demand_edges)
+            rows.append({
                 'demand': f"{s}→{t}",
                 'method': 'k-shortest',
                 'num_paths': len(paths),
-                'total_cost': round(total_cost, 2)
+                'demand_unique_cost': round(demand_cost, 2)
             })
         except Exception:
-            results.append({
-                'demand': f"{s}→{t}", 
-                'method': 'k-shortest', 
-                'num_paths': 0, 
-                'total_cost': 999999
+            rows.append({
+                'demand': f"{s}→{t}",
+                'method': 'k-shortest',
+                'num_paths': 0,
+                'demand_unique_cost': None
             })
-    
+
+    total_cost = sum(G[u][v]['cost'] for u, v in all_edges)
     runtime = time.time() - start
-    print(f"✅ k-Shortest completed in {runtime:.4f}s")
-    
-    return pd.DataFrame(results), runtime
+    print(f"✅ k-Shortest completed in {runtime:.4f}s | Total unique-edge cost: {total_cost:,.0f}")
+
+    return total_cost, runtime, pd.DataFrame(rows)
 
 
-# For standalone testing
 if __name__ == "__main__":
     from GA_redundant_paths import G, demands
-    df, runtime = run_k_shortest_baseline(G, demands, k=3)
+    total, runtime, df = run_k_shortest_baseline(G, demands, k=3)
     print(df)
-    print(f"Total Cost: {df['total_cost'].sum():,.0f}")
+    print(f"Total unique-edge cost: {total:,.0f}")
